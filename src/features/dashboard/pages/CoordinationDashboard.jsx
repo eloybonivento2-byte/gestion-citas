@@ -87,6 +87,8 @@ export default function CoordinationDashboard() {
 
           <KPICard 
             title="No Asistencias"
+
+            
             value={kpis.no_show_count}
             color="#ef4444"
             subtitle={`${Math.round((kpis.no_show_count / kpis.total_appoinments) * 100)}% del total`}
