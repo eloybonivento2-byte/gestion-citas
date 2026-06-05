@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { AdminRepository } from "../api/admin.repository";
-import { useAuth } from '../../../providers/AunthProvider';
+import { useAuth } from '../../../../providers/AuthProvider';
 import { toast } from "sonner";
 
 export function useAdmin() {
@@ -21,27 +21,12 @@ export function useAdmin() {
                 totalPages: result.totalPages,
                 total: result.total
             });
-        }   catch (err) {
+        }   catch {
             toast.error('Error cargando usuarios');
         }   finally {
             setLoading(false);
         }
     }, []);
-
-    const updateUserRole = async (userId, { roleId, dependencyId, isActive}) => {
-        try {
-            await AdminRepository.updateUser(userId, {
-                role_id: roleId,
-                dependency_id: dependencyId,
-                is_active: isActive
-            }, user.id);
-
-            toast.success('Usuario actualizado');
-            await fetchUsers(); // Refrescar Listar
-        } catch (err){
-            toast.error(err.message);
-        }
-    };
 
     // auditoria
     const fetchAuditLogs = useCallback(async (filters = {}) => {
@@ -61,31 +46,56 @@ export function useAdmin() {
         try {
             const data = await AdminRepository.getConfig();
             setConfig(data);
-        }catch (err) {
+        }catch {
             toast.error('Error cargando configuración');
-            setConfig(data);
         }
     }, []);
 
-    const updateConfig = async (keyof, value) => {
+    const updateConfig = async (key, value) => {
         try {
-            await AdminRepository.updateConfig(keyof, value, user.id);
+            await AdminRepository.updateConfig(key, value, user.id);
             toast.success('Configuración actualizada');
             await fetchConfig();
         }catch (err) {
             toast.error(err.message)
         }
     };
-  return {
-    users,
-    auditLogs,
-    config,
-    pagination,
-    loading,
-    fetchAuditLogs,
-    createUser,
-    fetchAuditLogs,
-    fetchConfig,
-    updateConfig
-  };
+
+    const createUser = async (userData) => {
+        try {
+            await AdminRepository.createUser(userData, user.id);
+            toast.success('Usuario creado correctamente');
+            await fetchUsers();
+        } catch (err) {
+            toast.error(err.message);
+        }
+    };
+
+    const updateUserRole = async (userId, { roleId, dependencyId, isActive }) => {
+        try {
+            await AdminRepository.updateUser(userId, {
+                role_id: roleId,
+                dependency_id: dependencyId,
+                is_active: isActive
+            }, user.id);
+            toast.success('Usuario actualizado');
+            await fetchUsers();
+        } catch (err) {
+            toast.error(err.message);
+        }
+    };
+
+    return {
+        users,
+        auditLogs,
+        config,
+        pagination,
+        loading,
+        fetchUsers,
+        fetchAuditLogs,
+        fetchConfig,
+        updateUserRole,
+        createUser,
+        updateConfig
+    };
 }

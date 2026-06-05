@@ -1,4 +1,4 @@
-import { supabase } from '../../../lib/supabase';
+import { supabase } from '../../../../lib/supabase';
 
 export class AdminRepository {
     // USUARIOS: Listar con filtros y paginación
@@ -103,7 +103,7 @@ export class AdminRepository {
         if (action) query = query.eq('action', action);
         if (userId) query = query.eq('user_id', userId);
         if (dateFrom) query = query.gte('created_at', dateFrom);
-        if (dateTo) query = query.Lte('created_at', dateTo);
+        if (dateTo) query = query.lte('created_at', dateTo);
 
         const from = (page - 1) * limit;
         const { data, error, count } = await query
@@ -139,5 +139,18 @@ export class AdminRepository {
             .eq('key', key)
             .select()
             .single();
+
+        if (error) throw error;
+
+        await this.logAction({
+            userId: adminId,
+            action: 'UPDATE_CONFIG',
+            entityType: 'config',
+            entityId: key,
+            oldData: oldConfig,
+            newData: data
+        });
+
+        return data;
     }
 }

@@ -8,6 +8,7 @@ const AuthContext = createContext(null);
 // 2. Hook personalizado para usar el contexto facilmente
 //esto evita importar useContext y AuthContext en cada archivo
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {

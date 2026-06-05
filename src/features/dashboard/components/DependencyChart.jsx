@@ -1,10 +1,10 @@
 import {
-    BarChard,
+    BarChart,
     Bar,
-    XAsis,
-    YAsis,
-    Cartes1anGrid,
-    looltip,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
     ResponsiveContainer,
     Cell,
 } from "recharts";
@@ -14,17 +14,17 @@ export function DependencyChart({ data }) {
         <div className="chart-container">
             <h3>Citas por Dependencia</h3>
             <ResponsiveContainer width="100%" height={300}>
-                <BarChard data={ data }>
-                    <Cartes1anGrid strokeDasharray="3 3" />
-                    <XAsis dataKey="name" />
-                    <YAsis  />
-                    <tooltip />
+                <BarChart data={ data }>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis  />
+                    <Tooltip />
                     <Bar dataKey="total" name="Total">
-                        {data.map((entry, index) => {
+                        {data.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={entry.color} />
-                        })}
+                        ))}
                     </Bar>
-                </BarChard>
+                </BarChart>
             </ResponsiveContainer>
         </div>
     );

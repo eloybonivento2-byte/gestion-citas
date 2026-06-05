@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useAppointments } from "../hooks/useAppointments";
 import { AppointmentCard } from "../components/AppointmentCard";
 import { useAuth } from "../../../providers/AuthProvider";
+import { Navbar } from "../../../shared/components/Navbar";
 
 export default function ProfessionalDashboard() {
   const { appointments, fetchAppointments, updateStatus, isLoading } =
@@ -18,7 +19,9 @@ export default function ProfessionalDashboard() {
   const handleNoShow = (id) => updateStatus(id, "no_show");
 
   return (
-    <div className="dashboard-container">
+    <>
+      <Navbar />
+      <div className="dashboard-container">
       <header className="dashboard-header">
         <h1>Citas - {profile?.dependencies?.name}</h1>
         <div className="filter-tabs">
@@ -77,6 +80,7 @@ export default function ProfessionalDashboard() {
           ))
         )}
       </div>
-    </div>
+      </div>
+    </>
   );
 }

@@ -52,7 +52,7 @@ export function AuditLogViewer() {
                                    <strong>{log.admin?.full_name || 'Sistema'}</strong>
                                    { '' }modificó{ '' }
                                    <Database size={14} />
-                                   <strong>{log.ntity_type}</strong>
+                                   <strong>                                    {log.entity_type}</strong>
                                    { '' }(ID: {log.entity_id})
                                 </p>
                                 {log.old_data && log.new_data && (

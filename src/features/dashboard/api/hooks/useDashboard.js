@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { DashboardRepository } from "../api/dashboard.repository";
+import { DashboardRepository } from "../dashboard.repository";
 import { toast } from "sonner";
 import { startOfMonth, endOfMonth, format } from "date-fns";
 
@@ -10,14 +10,14 @@ export function useDashboard() {
   const [professionals, setProfessionals] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const dateRange = {
+  const getDefaultRange = () => ({
     from: format(startOfMonth(new Date()), "yyyy-MM-dd"),
     to: format(endOfMonth(new Date()), "yyyy-MM-dd"),
-  };
+  });
 
   const fetchAllMetrics = useCallback(async (customRange = null) => {
     setLoading(true);
-    const range = customRange || dateRange;
+    const range = customRange || getDefaultRange();
 
     try {
       const [kpiData, depData, trendData, profData] = await Promise.all([
@@ -42,7 +42,7 @@ export function useDashboard() {
   const exportToCSV = async (range = null) => {
     try {
       const data = await DashboardRepository.getRawDataForExport(
-        range || dateRange,
+        range || getDefaultRange(),
       );
 
       // Transformar a formato plano para Excel
@@ -77,7 +77,7 @@ export function useDashboard() {
       link.click();
 
       toast.success("Reporte descargado");
-    } catch (err) {
+    } catch {
       toast.error("Error exportando datos");
     }
   };

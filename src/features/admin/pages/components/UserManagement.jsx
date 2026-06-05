@@ -14,7 +14,6 @@ const ROLES = [
 export function UserManagement() {
     const { users, pagination, loading, fetchUsers, updateUserRole } = useAdmin();
     const [filters, setFilters] = useState({ search: '', role: '' });
-    const [ editingUser, setEditingUser] = useState(null);
 
     useEffect(() => {
         fetchUsers(filters);
@@ -53,9 +52,9 @@ export function UserManagement() {
                     onChange={(e) => setFilters(f => ({ ...f, role: e.target.value }))}
                 >
                     <option value="">Todos los roles</option>
-                    {ROLES.map(r => {
+                    {ROLES.map(r => (
                         <option key={r.id} value={r.name}>{r.label}</option>
-                    })}
+                    ))}
                 </select>
             </div>
 
@@ -101,7 +100,7 @@ export function UserManagement() {
                             </td>
                             <td>{new Date(u.update_at).toLocaleDateString()}</td>
                             <td>
-                                <button className="btn-icon" onClick={() => setEditingUser(u)}>
+                                <button className="btn-icon">
                                     <MoreVertical size={18} />
                                 </button>
                             </td>

@@ -32,7 +32,7 @@ const AdminDashboard = lazy(
 );
 
 export function AppRoutes() {
-  const { isAprendiz, isProfessional, isCoordination, isAdmin } = useAuth();
+  const { isProfessional, isCoordination, isAdmin } = useAuth();
 
   // Redirección inteligente según rol (después del login)
   const getHomeRoute = () => {

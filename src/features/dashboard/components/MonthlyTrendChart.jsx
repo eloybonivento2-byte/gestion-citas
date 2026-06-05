@@ -1,24 +1,24 @@
 import {
     LineChart,
     Line,
-    XAsis,
-    YAsis,
-    Cartes1anGrid,
-    looltip,
+    XAxis,
+    YAxis,
+    CartesianGrid,
+    Tooltip,
     Legend,
     ResponsiveContainer,
 } from "recharts"
 
-export  function MonthlyTrendChart() {
+export  function MonthlyTrendChart({ data }) {
   return (
     <div className="chart-container">
       <h3>Tendencia Anual</h3>
-      <ResponsiveContainer widht="100%" heigth={300}>
+      <ResponsiveContainer width="100%" height={300}>
         <LineChart data={data}>
-            <Cartes1anGrid strokeDasharray="3 3" />
-            <XAsis dataKey="month" />
-            <YAsis />
-            <toolTip />
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="month" />
+            <YAxis />
+            <Tooltip />
             <Legend />
             <Line 
                 type="monotone"
@@ -29,8 +29,8 @@ export  function MonthlyTrendChart() {
             />
             <Line 
                 type="monotone"
-                dataKey="total"
-                stroke="#39A900"
+                dataKey="completed"
+                stroke="#22c55e"
                 name="Completadas"
             />
         </LineChart>

@@ -4,6 +4,7 @@ import { KPICard } from "../components/KPICard";
 import { DependencyChart } from "../components/DependencyChart";
 import { MonthlyTrendChart } from "../components/MonthlyTrendChart";
 import { ProfessionalTable } from "../components/ProfessionalTable";
+import { Navbar } from "../../../shared/components/Navbar";
 import { Download, RefreshCcw, Calendar } from "lucide-react";
 import { format, subMonths } from "date-fns";
 
@@ -12,7 +13,7 @@ export default function CoordinationDashboard() {
   const {
     kpis,
     byDependency,
-    MonthlyTrend,
+    monthlyTrend,
     professionals,
     loading,
     fetchAllMetrics,
@@ -36,7 +37,9 @@ export default function CoordinationDashboard() {
     return <div className="loading-screen">Cargando dashboard...</div>;
   }
   return (
-    <div className="dashboard-container">
+    <>
+      <Navbar />
+      <div className="dashboard-container">
       <header className="dashboard-header">
         <div>
           <h1>Panel de Coordinación</h1>
@@ -44,7 +47,7 @@ export default function CoordinationDashboard() {
         </div>
         <div className="hero-actions">
             <button
-            onClick={() => fetchAllMetrics(dateRange)}
+            onClick={() => exportToCSV(dateRange)}
             className="btn-secondary"
             >
               <Download size={18} />
@@ -58,7 +61,7 @@ export default function CoordinationDashboard() {
         <input 
           type="date"
           value={dateRange.from}
-          onChange={(e) => handleDateChange("to", e.target.value)}
+          onChange={(e) => handleDateChange("from", e.target.value)}
         />
       </div>
 
@@ -98,12 +101,13 @@ export default function CoordinationDashboard() {
 
       <section className="charts-grid">
         <DependencyChart data={byDependency} />
-        <MonthlyTrendChart data={MonthlyTrend} />
+        <MonthlyTrendChart data={monthlyTrend} />
       </section>
 
       <section className="professionals-section">
         <ProfessionalTable data={professionals}/>
       </section>
     </div>
+    </>
   );
 }
