@@ -1,7 +1,5 @@
 import { supabase } from "../../../lib/supabase";
 
-// CLASE Repository: encapsula todo el acceso a datos de citas
-// Principio SOLID: Dependency Inversion (dependemos de abstracciones)
 export class AppointmentRepository {
   // CREATE: Crear nueva cita
   static async create(appointmentData) {
@@ -12,7 +10,7 @@ export class AppointmentRepository {
         `
         *,
         dependencies (name, color),
-        profiles!professional_id (full_name)
+        professional:profiles!professional_id (full_name)
       `,
       )
       .single();
@@ -21,23 +19,21 @@ export class AppointmentRepository {
     return data;
   }
 
-  // READ: Obtener citas según filtros (RLS se encarga de seguridad)
+  // READ: Obtener citas según filtros
   static async fetch({ userId, dependencyId, status, dateFrom, dateTo }) {
     let query = supabase.from("appointments").select(`
         *,
         dependencies (name, color),
-        profiles!user_id (full_name, document_number),
+        user:profiles!user_id (full_name, document_number),
         professional:profiles!professional_id (full_name)
       `);
 
-    // Filtros dinámicos
     if (userId) query = query.eq("user_id", userId);
     if (dependencyId) query = query.eq("dependency_id", dependencyId);
     if (status) query = query.eq("status", status);
     if (dateFrom) query = query.gte("scheduled_date", dateFrom);
     if (dateTo) query = query.lte("scheduled_date", dateTo);
 
-    // Ordenar por fecha y hora
     query = query
       .order("scheduled_date", { ascending: true })
       .order("scheduled_time", { ascending: true });
@@ -74,7 +70,7 @@ export class AppointmentRepository {
 
     const { data, error } = await query;
     if (error) throw error;
-    return data.length === 0; // true = disponible
+    return data.length === 0;
   }
 
   // COUNT PENDING: Contar citas pendientes de un usuario (límite de 2)

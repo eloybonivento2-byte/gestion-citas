@@ -61,7 +61,12 @@ export function SystemConfig() {
 
   const handleSave = async (key) => {
     setSaving(key);
-    await updateConfig(key, localConfig[key]);
+    await updateConfig(key, edits[key] ?? localConfig[key]);
+    setEdits((prev) => {
+      const next = { ...prev };
+      delete next[key];
+      return next;
+    });
     setSaving(null);
   };
 

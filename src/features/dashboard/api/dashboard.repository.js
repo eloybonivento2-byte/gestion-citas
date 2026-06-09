@@ -1,6 +1,5 @@
 import { supabase } from "../../../lib/supabase";
 
-// AGREGACIONES COMPLEJAS con PostgreSQL
 export class DashboardRepository {
   // KPI: Conteos generales
   static async getKPIs(dateRange) {
@@ -29,7 +28,6 @@ export class DashboardRepository {
 
     if (error) throw error;
 
-    // Transformación en frontend (podría ser SQL también)
     const grouped = data.reduce((acc, curr) => {
       const depName = curr.dependencies.name;
       const color = curr.dependencies.color;
@@ -61,7 +59,7 @@ export class DashboardRepository {
     });
 
     if (error) throw error;
-    return data; // [{ month: 'Ene', total: 45, completed: 38 }, ...]
+    return data;
   }
 
   // Ranking de profesionales
@@ -92,7 +90,6 @@ export class DashboardRepository {
           name,
           total: 0,
           completed: 0,
-          avgResponseTime: 0,
         };
       }
 

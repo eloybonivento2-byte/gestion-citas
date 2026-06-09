@@ -88,7 +88,7 @@ export function UserManagement() {
                                     {u.roles?.name}
                                 </span>
                             </td>
-                            <td>{u.dependencies?.name || '='}</td>
+                            <td>{u.dependencies?.name || 'Sin dependencia'}</td>
                             <td>
                                 <button 
                                     onClick={() => toggleUserStatus(u)}

@@ -24,7 +24,8 @@ export function AppointmentCard({ appointment, onCancel, isAprendiz }) {
     scheduled_time,
     status,
     reason,
-    profiles,
+    user,
+    professional,
   } = appointment;
   const config = STATUS_CONFIG[status];
   const Icon = config.icon;
@@ -60,10 +61,16 @@ export function AppointmentCard({ appointment, onCancel, isAprendiz }) {
 
       <div className="card-body">
         <p className="reason">{reason}</p>
-        {!isAprendiz && profiles && (
+        {isAprendiz && professional && (
           <div className="aprendiz-info">
             <User size={14} />
-            <span>{profiles.full_name}</span>
+            <span>{professional.full_name}</span>
+          </div>
+        )}
+        {!isAprendiz && user && (
+          <div className="aprendiz-info">
+            <User size={14} />
+            <span>{user.full_name}</span>
           </div>
         )}
       </div>

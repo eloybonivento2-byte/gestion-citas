@@ -30,7 +30,7 @@ export default function CoordinationDashboard() {
   }, [dateRange, fetchAllMetrics]);
 
   const handleDateChange = (field, value) => {
-    setDateRange((prev) => ({...prev, [field] : value}));
+    setDateRange((prev) => ({ ...prev, [field]: value }));
   };
 
   if (loading && !kpis) {
@@ -90,8 +90,6 @@ export default function CoordinationDashboard() {
 
           <KPICard 
             title="No Asistencias"
-
-            
             value={kpis.no_show_count}
             color="#ef4444"
             subtitle={`${Math.round((kpis.no_show_count / kpis.total_appoinments) * 100)}% del total`}

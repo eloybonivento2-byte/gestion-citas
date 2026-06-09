@@ -25,8 +25,16 @@ export function AppointmentForm({ onSuccess }) {
   // Cargar dependencias disponibles
   useEffect(() => {
     async function loadDependencies() {
-      const { data } = await supabase.from("dependencies").select("*");
-      setDependencies(data || []);
+      try {
+        const { data, error } = await supabase.from("dependencies").select("*");
+        if (error) {
+          console.error("Error cargando dependencias:", error.message);
+          return;
+        }
+        setDependencies(data || []);
+      } catch (err) {
+        console.error("Error inesperado cargando dependencias:", err);
+      }
     }
     loadDependencies();
   }, []);

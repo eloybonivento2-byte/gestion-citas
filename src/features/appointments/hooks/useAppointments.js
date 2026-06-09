@@ -112,7 +112,11 @@ export function useAppointments() {
       );
 
       toast.success(
-        `Cita ${newStatus === "confirmed" ? "confirmada" : "actualizada"}`,
+        newStatus === "cancelled"
+          ? "Cita cancelada"
+          : newStatus === "confirmed"
+            ? "Cita confirmada"
+            : "Cita actualizada",
       );
       return { success: true };
     } catch (err) {
@@ -127,8 +131,18 @@ export function useAppointments() {
   const cancelAppointment = async (appointmentId) => {
     const appointment = appointments.find((a) => a.id === appointmentId);
 
+    if (!appointment) {
+      toast.error("Cita no encontrada");
+      return { success: false };
+    }
+
     if (appointment.status !== "pending") {
       toast.error("Solo puedes cancelar citas pendientes");
+      return { success: false };
+    }
+
+    const confirmed = window.confirm("¿Estás seguro de que deseas cancelar esta cita?");
+    if (!confirmed) {
       return { success: false };
     }
 

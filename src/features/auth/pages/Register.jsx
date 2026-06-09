@@ -25,6 +25,11 @@ export default function Register() {
     e.preventDefault();
     setValidationError("");
 
+    if (!formData.full_name || !formData.document_number || !formData.email) {
+      setValidationError("Todos los campos son obligatorios");
+      return;
+    }
+
     if (formData.password !== formData.confirmPassword) {
       setValidationError("Las contraseñas no coinciden");
       return;

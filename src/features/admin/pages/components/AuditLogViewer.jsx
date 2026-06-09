@@ -62,7 +62,7 @@ export function AuditLogViewer() {
                                             <pre>{JSON.stringify(log.old_data, null, 2)}</pre>
                                         </div>
                                         <ArrowRight size={20} />
-                                        <div className="change-box new">
+                                        <div className="changes-box new">
                                             <span className="label">Después</span>
                                             <pre>{JSON.stringify(log.new_data, null, 2)}</pre>
                                         </div>

@@ -95,10 +95,7 @@ export class AdminRepository {
     static async getAuditLogs({ action, userId, dateFrom, dateTo, page = 1, limit = 50}) {
         let query = supabase
             .from('audit_logs')
-            .select(`
-                *,
-                admin:profiles!user_id (full_name, email)
-                `, { count: 'exact' });
+            .select('*', { count: 'exact' });
 
         if (action) query = query.eq('action', action);
         if (userId) query = query.eq('user_id', userId);
@@ -110,6 +107,25 @@ export class AdminRepository {
             .order('created_at', { ascending: false })
             .range(from, from +  limit - 1);
         if (error) throw error;
+
+        // Enriquecer con datos del administrador
+        if (data && data.length > 0) {
+            const adminIds = [...new Set(data.map((l) => l.user_id).filter(Boolean))];
+            if (adminIds.length > 0) {
+                const { data: profiles } = await supabase
+                    .from('profiles')
+                    .select('id, full_name, email')
+                    .in('id', adminIds);
+
+                const profilesMap = Object.fromEntries(
+                    (profiles || []).map((p) => [p.id, p]),
+                );
+                data.forEach((log) => {
+                    log.admin = profilesMap[log.user_id] || null;
+                });
+            }
+        }
+
         return { logs: data, total: count };
     }
 
@@ -152,5 +168,22 @@ export class AdminRepository {
         });
 
         return data;
+    }
+
+    // AUDITORÍA: Registrar acción en audit_logs
+    static async logAction({ userId, action, entityType, entityId, oldData, newData }) {
+        const { error } = await supabase
+            .from('audit_logs')
+            .insert([{
+                user_id: userId,
+                action,
+                entity_type: entityType,
+                entity_id: String(entityId),
+                old_data: oldData,
+                new_data: newData,
+                created_at: new Date()
+            }]);
+
+        if (error) console.error('Error logging audit action:', error);
     }
 }

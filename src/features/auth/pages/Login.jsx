@@ -10,6 +10,9 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!email || !password) {
+      return;
+    }
     const result = await signIn(email, password);
     if (result.success) {
       navigate("/");
