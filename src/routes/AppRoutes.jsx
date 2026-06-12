@@ -9,7 +9,11 @@ import { lazy, Suspense } from "react";
 // Públicas
 const Login = lazy(() => import("../features/auth/pages/Login"));
 const Register = lazy(() => import("../features/auth/pages/Register"));
+const ForgotPassword = lazy(() => import("../features/auth/pages/ForgotPassword"));
 const Unauthorized = lazy(() => import("../shared/components/Unauthorized"));
+const NotFound = lazy(() => import("../shared/components/NotFound"));
+const HomePage = lazy(() => import("../features/home/pages/HomePage"));
+const ProfilePage = lazy(() => import("../features/profile/pages/ProfilePage"));
 
 // Privadas - Aprendiz
 const AprendizDashboard = lazy(
@@ -32,7 +36,7 @@ const AdminDashboard = lazy(
 );
 
 export function AppRoutes() {
-  const { isProfessional, isCoordination, isAdmin } = useAuth();
+  const { user, isProfessional, isCoordination, isAdmin } = useAuth();
 
   // Redirección inteligente según rol (después del login)
   const getHomeRoute = () => {
@@ -48,7 +52,18 @@ export function AppRoutes() {
         {/* RUTAS PÚBLICAS */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
+
+        {/* RUTA PERFIL - CUALQUIER ROL */}
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute requiredRoles={["SUPERADMIN", "COORDINACION", "PSICOLOGIA", "ENFERMERIA", "TRABAJO_SOCIAL", "APRENDIZ"]}>
+              <ProfilePage />
+            </ProtectedRoute>
+          }
+        />
 
         {/* RUTAS PROTEGIDAS - APRENDIZ */}
         <Route
@@ -93,10 +108,13 @@ export function AppRoutes() {
         />
 
         {/* REDIRECCIÓN INICIAL */}
-        <Route path="/" element={<Navigate to={getHomeRoute()} replace />} />
+        <Route
+          path="/"
+          element={user ? <Navigate to={getHomeRoute()} replace /> : <HomePage />}
+        />
 
         {/* 404 */}
-        <Route path="*" element={<div>404 - Página no encontrada</div>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
   );

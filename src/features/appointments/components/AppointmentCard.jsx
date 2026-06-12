@@ -17,7 +17,7 @@ const STATUS_CONFIG = {
   no_show: { label: "No asistió", color: "#6b7280", icon: XCircle },
 };
 
-export function AppointmentCard({ appointment, onCancel, isAprendiz }) {
+export function AppointmentCard({ appointment, onCancel, isAprendiz, onAssignProfessional }) {
   const {
     dependencies,
     scheduled_date,
@@ -79,6 +79,14 @@ export function AppointmentCard({ appointment, onCancel, isAprendiz }) {
         <div className="card-actions">
           <button onClick={onCancel} className="btn-danger">
             Cancelar Cita
+          </button>
+        </div>
+      )}
+
+      {!isAprendiz && status === "pending" && !professional && onAssignProfessional && (
+        <div className="card-actions">
+          <button onClick={() => onAssignProfessional(appointment)} className="btn-primary">
+            Asignar Profesional
           </button>
         </div>
       )}

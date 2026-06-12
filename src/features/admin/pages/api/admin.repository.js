@@ -1,5 +1,14 @@
 import { supabase } from '../../../../lib/supabase';
 
+const ROLES_MAP = {
+    SUPERADMIN: 1,
+    COORDINACION: 2,
+    PSICOLOGIA: 3,
+    ENFERMERIA: 4,
+    TRABAJO_SOCIAL: 5,
+    APRENDIZ: 6,
+};
+
 export class AdminRepository {
     // USUARIOS: Listar con filtros y paginación
     static async getUsers({ role, status, search, page = 1, limit = 20 }) {
@@ -11,7 +20,7 @@ export class AdminRepository {
             dependencies (name)
             `, { count: 'exact' });
 
-        if (role) query = query.eq('roles.name', role);
+        if (role) query = query.eq('role_id', ROLES_MAP[role] || role);
         if (status !== undefined) query = query.eq('is_active', status);
         if (search) {
             query = query.or(`full_name.ilike.%${search}%.document_number.ilike.%${search}%`);
@@ -73,7 +82,7 @@ export class AdminRepository {
         // 2. El trigger creará el perfil, pero actualizamos rol/dependencia
         const { data: profile, error: profileError } = await supabase
             .from('profiles')
-            .update({ role_id: roleId, dependencyId})
+            .update({ role_id: roleId, dependency_id: dependencyId })
             .eq('id', authData.user.id)
             .select()
             .single();

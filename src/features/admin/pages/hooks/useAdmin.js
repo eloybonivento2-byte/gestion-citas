@@ -7,7 +7,7 @@ export function useAdmin() {
     const { user } = useAuth();
     const [ users, setUsers] = useState([]);
     const [ auditLogs, setAuditLogs] = useState ([]);
-    const [ config, setConfig] = useState ([]);
+    const [ config, setConfig] = useState({});
     const [ pagination, setPagination] = useState(null);
     const [loading, setLoading] = useState(false);
 
@@ -43,11 +43,14 @@ export function useAdmin() {
 
     // Configuración
     const fetchConfig = useCallback(async () => {
+        setLoading(true);
         try {
             const data = await AdminRepository.getConfig();
             setConfig(data);
         }catch {
             toast.error('Error cargando configuración');
+        } finally {
+            setLoading(false);
         }
     }, []);
 

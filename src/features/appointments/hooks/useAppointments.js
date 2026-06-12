@@ -149,6 +149,40 @@ export function useAppointments() {
     return updateStatus(appointmentId, "cancelled");
   };
 
+  // ASSIGN PROFESSIONAL: Asignar profesional a una cita
+  const assignProfessional = async (appointmentId, professionalId) => {
+    setStatus(STATUS.UPDATING);
+
+    try {
+      const updated = await AppointmentRepository.assignProfessional(
+        appointmentId,
+        professionalId,
+      );
+
+      setAppointments((prev) =>
+        prev.map((app) => (app.id === appointmentId ? updated : app)),
+      );
+
+      toast.success("Profesional asignado correctamente");
+      return { success: true };
+    } catch (err) {
+      toast.error("Error asignando profesional");
+      return { success: false, error: err.message };
+    } finally {
+      setStatus(STATUS.IDLE);
+    }
+  };
+
+  // GET PROFESSIONALS: Obtener profesionales de una dependencia
+  const getProfessionals = async (dependencyId) => {
+    try {
+      return await AppointmentRepository.getProfessionalsByDependency(dependencyId);
+    } catch {
+      toast.error("Error cargando profesionales");
+      return [];
+    }
+  };
+
   return {
     appointments,
     status,
@@ -159,5 +193,7 @@ export function useAppointments() {
     createAppointment,
     updateStatus,
     cancelAppointment,
+    assignProfessional,
+    getProfessionals,
   };
 }

@@ -84,4 +84,35 @@ export class AppointmentRepository {
     if (error) throw error;
     return count;
   }
+
+  // ASSIGN PROFESSIONAL: Asignar profesional a una cita
+  static async assignProfessional(appointmentId, professionalId) {
+    const { data, error } = await supabase
+      .from("appointments")
+      .update({ professional_id: professionalId, updated_at: new Date() })
+      .eq("id", appointmentId)
+      .select(`
+        *,
+        dependencies (name, color),
+        user:profiles!user_id (full_name, document_number),
+        professional:profiles!professional_id (full_name)
+      `)
+      .single();
+
+    if (error) throw new Error(`Error asignando profesional: ${error.message}`);
+    return data;
+  }
+
+  // GET PROFESSIONALS BY DEPENDENCY: Obtener profesionales de una dependencia
+  static async getProfessionalsByDependency(dependencyId) {
+    const { data, error } = await supabase
+      .from("profiles")
+      .select("id, full_name")
+      .eq("dependency_id", dependencyId)
+      .eq("is_active", true)
+      .in("role_id", [3, 4, 5]);
+
+    if (error) throw error;
+    return data || [];
+  }
 }
