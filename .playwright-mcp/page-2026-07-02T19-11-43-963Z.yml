@@ -1,0 +1,58 @@
+- generic [ref=f14e2]:
+  - navigation [ref=f14e43]:
+    - generic [ref=f14e44]:
+      - img [ref=f14e45]
+      - generic [ref=f14e47]: SENA Bienestar
+    - generic [ref=f14e48]:
+      - generic [ref=f14e49]:
+        - generic [ref=f14e50]: Test Usuario
+        - generic [ref=f14e51]: Aprendiz
+      - link "Mi perfil" [ref=f14e52] [cursor=pointer]:
+        - /url: /profile
+        - img [ref=f14e53]
+      - button "Cerrar sesión" [ref=f14e56] [cursor=pointer]:
+        - img [ref=f14e57]
+  - generic [ref=f14e60]:
+    - banner [ref=f14e61]:
+      - generic [ref=f14e62]:
+        - img [ref=f14e64]
+        - generic [ref=f14e66]:
+          - heading "Gestión de Citas de Bienestar" [level=1] [ref=f14e67]
+          - paragraph [ref=f14e68]: Administra y coordina tus citas de bienestar personal de manera rápida y eficiente
+      - button "Nueva Cita" [active] [ref=f14e69] [cursor=pointer]:
+        - img [ref=f14e70]
+        - generic [ref=f14e71]: Nueva Cita
+    - generic [ref=f14e78]:
+      - heading "Solicitar Nueva Cita" [level=2] [ref=f14e79]
+      - generic [ref=f14e80]:
+        - generic [ref=f14e81]:
+          - generic [ref=f14e82]: Dependencia
+          - combobox [ref=f14e83]:
+            - option "Selecciona una dependencia..." [selected]
+            - option "Psicología"
+            - option "Enfermería"
+            - option "Trabajo Social"
+        - generic [ref=f14e84]:
+          - generic [ref=f14e85]:
+            - generic [ref=f14e86]: Fecha
+            - textbox [ref=f14e87]
+          - generic [ref=f14e88]:
+            - generic [ref=f14e89]: Hora
+            - combobox [ref=f14e90]:
+              - option "08:00" [selected]
+              - option "09:00"
+              - option "10:00"
+              - option "11:00"
+              - option "12:00"
+              - option "13:00"
+              - option "14:00"
+              - option "15:00"
+              - option "16:00"
+        - generic [ref=f14e91]:
+          - generic [ref=f14e92]: Motivo de consulta
+          - textbox "Describe brevemente por qué necesitas la cita (mínimo 10 caracteres)..." [ref=f14e93]
+        - button "Solicitar Cita" [ref=f14e94] [cursor=pointer]
+    - generic [ref=f14e74]:
+      - paragraph [ref=f14e75]: No tienes citas agendadas
+      - button "Agenda tu primera cita aquí" [ref=f14e76] [cursor=pointer]
+  - region "Notifications alt+T"

@@ -1,0 +1,43 @@
+- generic [ref=f14e2]:
+  - navigation [ref=f14e43]:
+    - generic [ref=f14e44]:
+      - img [ref=f14e45]
+      - generic [ref=f14e47]: SENA Bienestar
+    - generic [ref=f14e48]:
+      - generic [ref=f14e49]:
+        - generic [ref=f14e50]: Test Usuario
+        - generic [ref=f14e51]: Aprendiz
+      - link "Mi perfil" [ref=f14e52] [cursor=pointer]:
+        - /url: /profile
+        - img [ref=f14e53]
+      - button "Cerrar sesión" [ref=f14e56] [cursor=pointer]:
+        - img [ref=f14e57]
+  - generic [ref=f14e60]:
+    - banner [ref=f14e61]:
+      - generic [ref=f14e62]:
+        - img [ref=f14e64]
+        - generic [ref=f14e66]:
+          - heading "Gestión de Citas de Bienestar" [level=1] [ref=f14e67]
+          - paragraph [ref=f14e68]: Administra y coordina tus citas de bienestar personal de manera rápida y eficiente
+      - button "Nueva Cita" [ref=f14e69] [cursor=pointer]:
+        - img [ref=f14e70]
+        - generic [ref=f14e71]: Nueva Cita
+    - generic [ref=f14e95]:
+      - generic [ref=f14e96]:
+        - generic [ref=f14e97]: Psicología
+        - generic [ref=f14e98]:
+          - img [ref=f14e99]
+          - generic [ref=f14e101]: Pendiente
+      - generic [ref=f14e102]:
+        - generic [ref=f14e103]:
+          - img [ref=f14e104]
+          - generic [ref=f14e106]: 10 de julio de 2026
+        - generic [ref=f14e107]:
+          - img [ref=f14e108]
+          - generic [ref=f14e111]: 08:00:00
+      - paragraph [ref=f14e113]: Necesito una cita para evaluar mi estado emocional durante el programa de formación
+      - generic [ref=f14e114]:
+        - button "Cancelar Cita" [ref=f14e115] [cursor=pointer]
+        - button "Reprogramar" [ref=f14e116] [cursor=pointer]
+      - button "Editar Datos" [ref=f14e118] [cursor=pointer]
+  - region "Notifications alt+T"

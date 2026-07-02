@@ -1,0 +1,466 @@
+- generic:
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - paragraph: We are investigating a technical issue
+                    - generic:
+                      - generic: ·
+                      - generic:
+                        - text: Follow the
+                        - link:
+                          - /url: https://status.supabase.com
+                          - text: status page
+                        - text: for updates
+                - button:
+                  - generic:
+                    - img
+        - generic:
+          - banner:
+            - generic:
+              - generic:
+                - link:
+                  - /url: /dashboard/org/aejshpuehznkayjsfxmf
+                  - img
+                - generic:
+                  - generic:
+                    - img
+                  - generic:
+                    - link:
+                      - /url: /dashboard/org/aejshpuehznkayjsfxmf
+                      - img
+                      - generic: Bienestar
+                      - generic: Free
+                    - button:
+                      - generic:
+                        - img
+                  - generic:
+                    - generic:
+                      - img
+                    - generic:
+                      - link:
+                        - /url: /dashboard/project/zisushntyziyinvkfmgy
+                        - img
+                        - generic: gestion-citas
+                      - button:
+                        - generic:
+                          - img
+                    - generic:
+                      - img
+                    - generic:
+                      - link:
+                        - /url: /dashboard/project/zisushntyziyinvkfmgy
+                        - generic: main
+                        - generic: Production
+                      - button:
+                        - generic:
+                          - img
+                - generic:
+                  - button:
+                    - generic:
+                      - img
+                    - generic: Connect
+              - generic:
+                - generic:
+                  - generic: Feedback
+                - generic:
+                  - button:
+                    - generic:
+                      - img
+                      - paragraph: Search...
+                    - generic:
+                      - generic: Ctrl K
+                  - button [ref=f10e774] [cursor=pointer]:
+                    - generic [ref=f10e36]:
+                      - img [ref=f10e37]
+                      - generic [ref=f10e40]: Help
+                  - button [ref=f10e775] [cursor=pointer]:
+                    - generic [ref=f10e43]:
+                      - img [ref=f10e44]
+                      - generic [ref=f10e46]: Advisor Center
+                  - button [ref=f10e776] [cursor=pointer]:
+                    - generic [ref=f10e48]:
+                      - img [ref=f10e49]
+                      - generic [ref=f10e51]: SQL Editor
+                  - button [ref=f10e777] [cursor=pointer]:
+                    - generic [ref=f10e53]:
+                      - img [ref=f10e56]
+                      - generic [ref=f10e59]: AI Assistant
+                - button [ref=f10e60] [cursor=pointer]:
+                  - figure [ref=f10e207]:
+                    - img [ref=f10e208]
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - list:
+                      - generic:
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy
+                            - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/editor
+                            - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/sql
+                            - img
+                      - generic:
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/database/schemas
+                            - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/users
+                            - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/storage/files
+                            - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/functions
+                            - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/realtime/inspector
+                            - img
+                      - generic:
+                        - generic:
+                          - listitem:
+                            - link:
+                              - /url: /dashboard/project/zisushntyziyinvkfmgy/advisors/security
+                              - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/observability
+                            - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/logs
+                            - img
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/integrations
+                            - img
+                      - generic:
+                        - listitem:
+                          - link:
+                            - /url: /dashboard/project/zisushntyziyinvkfmgy/settings/general
+                            - img
+                - generic:
+                  - generic:
+                    - button:
+                      - generic:
+                        - img
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - heading [level=4]: SQL Editor
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic: Search queries
+                                          - textbox:
+                                            - /placeholder: Search queries...
+                                          - button:
+                                            - img
+                                          - img
+                                      - button:
+                                        - generic:
+                                          - img
+                                    - generic:
+                                      - button:
+                                        - img
+                                        - generic: Shared
+                                    - generic:
+                                      - button:
+                                        - img
+                                        - generic: Favorites
+                                    - generic:
+                                      - button [expanded]:
+                                        - img
+                                        - generic: PRIVATE (9)
+                                      - generic:
+                                        - tree:
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Untitled query
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Untitled query
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Untitled query
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Roles and Permissions Table
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Roles and Permissions Table
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Auditoría y configuración del sistema con RLS
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Dashboard KPIs and Monthly Appointment Trends
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Role-Based Profile View Policy
+                                          - generic:
+                                            - generic:
+                                              - img
+                                              - generic: Esquema de Bienestar SENA con RLS y flujos de perfiles/turnos
+                                    - generic:
+                                      - button [expanded]:
+                                        - img
+                                        - generic: Reference
+                                      - generic:
+                                        - link:
+                                          - /url: /dashboard/project/zisushntyziyinvkfmgy/sql/templates
+                                          - img
+                                          - text: templates
+                                        - link:
+                                          - /url: /dashboard/project/zisushntyziyinvkfmgy/sql/examples
+                                          - img
+                                          - text: examples
+                                  - generic:
+                                    - button:
+                                      - generic: View running queries
+                      - separator:
+                        - generic:
+                          - img
+                      - generic:
+                        - generic:
+                          - main:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button:
+                                    - img
+                                    - generic: Collapse sidebar
+                                  - tablist:
+                                    - generic:
+                                      - button:
+                                        - tab [selected]:
+                                          - img
+                                          - generic:
+                                            - generic: Untitled query
+                                          - button:
+                                            - img
+                                        - separator
+                                    - button:
+                                      - img
+                                - status
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - generic:
+                                                - code:
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - generic: "1"
+                                                        - generic:
+                                                          - generic: "2"
+                                                        - generic:
+                                                          - generic: "3"
+                                                        - generic:
+                                                          - generic: "4"
+                                                        - generic:
+                                                          - generic: "5"
+                                                        - generic:
+                                                          - generic: "6"
+                                                        - generic:
+                                                          - generic: 
+                                                          - generic: "7"
+                                                        - generic:
+                                                          - generic: "8"
+                                                        - generic:
+                                                          - generic: "9"
+                                                        - generic:
+                                                          - generic: "10"
+                                                        - generic:
+                                                          - generic: "11"
+                                                        - generic:
+                                                          - generic: "12"
+                                                        - generic:
+                                                          - generic: "13"
+                                                        - generic:
+                                                          - generic: 
+                                                          - generic: "14"
+                                                        - generic:
+                                                          - generic: "15"
+                                                        - generic:
+                                                          - generic: "16"
+                                                        - generic:
+                                                          - generic: "17"
+                                                        - generic:
+                                                          - generic: "18"
+                                                        - generic:
+                                                          - generic: "19"
+                                                        - generic:
+                                                          - generic: "20"
+                                                    - generic:
+                                                      - generic:
+                                                        - generic:
+                                                          - generic: "-- ============================================="
+                                                        - generic:
+                                                          - generic: "-- SCRIPT COMPLETO DE REPARACIÓN"
+                                                        - generic:
+                                                          - generic: "-- Ejecutar en Supabase SQL Editor"
+                                                        - generic:
+                                                          - generic: "-- ============================================="
+                                                        - generic:
+                                                          - generic: "-- 1. INSERTAR DEPENDENCIAS FALTANTES"
+                                                        - generic:
+                                                          - generic: INSERT INTO dependencies (name, color) VALUES
+                                                        - generic:
+                                                          - generic: ('Psicología', '#3b82f6'),
+                                                        - generic:
+                                                          - generic: ('Enfermería', '#22c55e'),
+                                                        - generic:
+                                                          - generic: ('Trabajo Social', '#f59e0b')
+                                                        - generic:
+                                                          - generic: ON CONFLICT DO NOTHING;
+                                                        - generic:
+                                                          - generic: "-- 2. INSERTAR CONFIGURACIÓN DEL SISTEMA"
+                                                        - generic:
+                                                          - generic: INSERT INTO system_config (key, value) VALUES
+                                                        - generic:
+                                                          - generic: ('max_appointments_per_day', '30'),
+                                                        - generic:
+                                                          - generic: ('appointment_advance_days', '1'),
+                                                        - generic:
+                                                          - generic: ('enable_notifications', 'true'),
+                                                        - generic:
+                                                          - generic: ('require_approval', 'false')
+                                                        - generic:
+                                                          - generic: ON CONFLICT (key) DO NOTHING;
+                                                    - textbox: "-- ============================================= -- SCRIPT COMPLETO DE REPARACIÓN -- Ejecutar en Supabase SQL Editor -- ============================================= -- 1. INSERTAR DEPENDENCIAS FALTANTES INSERT INTO dependencies (name, color) VALUES ('Psicología', '#3b82f6'), ('Enfermería', '#22c55e'), ('Trabajo Social', '#f59e0b')"
+                                    - separator:
+                                      - generic:
+                                        - img
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - tablist:
+                                            - generic:
+                                              - tab [selected]:
+                                                - generic: Results
+                                              - tab:
+                                                - generic: Chart
+                                            - generic:
+                                              - button:
+                                                - generic:
+                                                  - img
+                                              - generic:
+                                                - generic:
+                                                  - generic:
+                                                    - generic: Source
+                                                    - button:
+                                                      - generic: Primary database
+                                                      - generic:
+                                                        - img
+                                                  - button:
+                                                    - generic:
+                                                      - generic:
+                                                        - generic: Role
+                                                        - generic: postgres
+                                                        - img
+                                                  - button:
+                                                    - generic: Run
+                                                    - generic:
+                                                      - generic: Ctrl ↵
+                                          - generic:
+                                            - paragraph:
+                                              - text: Click
+                                              - code: Run
+                                              - text: to execute your query
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+              - generic:
+                - generic:
+                  - button:
+                    - generic:
+                      - img
+                - generic:
+                  - generic:
+                    - generic: Beta
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: 02 Jul 26 14:04:31
+                            - generic: "200"
+                        - generic:
+                          - generic:
+                            - generic: 02 Jul 26 14:04:28
+                            - generic: "201"
+                        - generic:
+                          - generic:
+                            - generic: 02 Jul 26 14:04:25
+                            - generic: "200"
+                        - generic:
+                          - generic:
+                            - generic: 02 Jul 26 14:04:22
+                            - generic: "200"
+                  - generic:
+                    - paragraph: Unified Logs is here
+                    - paragraph: Search and correlate logs across all of your services from a single place.
+                  - generic:
+                    - link:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/logs
+                      - generic: Explore Unified Logs
+  - generic:
+    - alert: Untitled query | SQL Editor | gestion-citas | Bienestar | Supabase
+  - alertdialog "Potential issue detected" [ref=f10e779]:
+    - generic [ref=f10e780]:
+      - heading "Potential issue detected" [level=2] [ref=f10e781]
+      - generic [ref=f10e782]:
+        - paragraph [ref=f10e783]: This query includes destructive operations. It may permanently change or remove data, tables, schemas, or other objects.
+        - paragraph [ref=f10e784]: Run this query only if you intend these changes and understand the risks.
+    - generic [ref=f10e785]:
+      - button "Cancel" [active] [ref=f10e786] [cursor=pointer]
+      - button "Run query" [ref=f10e787] [cursor=pointer]:
+        - generic [ref=f10e788]: Run query

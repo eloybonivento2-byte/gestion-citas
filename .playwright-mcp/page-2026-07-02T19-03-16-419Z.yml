@@ -1,0 +1,108 @@
+- generic [active] [ref=f10e1]:
+  - generic [ref=f10e4]:
+    - banner [ref=f10e6]:
+      - generic [ref=f10e7]:
+        - generic [ref=f10e8]:
+          - link "Supabase" [ref=f10e9] [cursor=pointer]:
+            - /url: /dashboard/organizations
+            - img "Supabase" [ref=f10e10]
+          - img [ref=f10e14]
+          - button "Connect" [disabled] [ref=f10e18]:
+            - img [ref=f10e20]
+            - generic [ref=f10e22]: Connect
+        - generic [ref=f10e23]:
+          - generic [ref=f10e25] [cursor=pointer]: Feedback
+          - generic [ref=f10e26]:
+            - button "Search..." [ref=f10e27]:
+              - generic [ref=f10e28]:
+                - img [ref=f10e29]
+                - paragraph [ref=f10e32]: Search...
+              - generic [ref=f10e34]: Ctrl K
+            - button "Help" [ref=f10e35] [cursor=pointer]:
+              - generic [ref=f10e36]:
+                - img [ref=f10e37]
+                - generic [ref=f10e40]: Help
+            - button "Advisor Center" [ref=f10e42] [cursor=pointer]:
+              - generic [ref=f10e43]:
+                - img [ref=f10e44]
+                - generic [ref=f10e46]: Advisor Center
+            - button "SQL Editor" [ref=f10e47] [cursor=pointer]:
+              - generic [ref=f10e48]:
+                - img [ref=f10e49]
+                - generic [ref=f10e51]: SQL Editor
+            - button "AI Assistant" [ref=f10e52] [cursor=pointer]:
+              - generic [ref=f10e53]:
+                - img [ref=f10e56]
+                - generic [ref=f10e59]: AI Assistant
+          - button [ref=f10e60] [cursor=pointer]:
+            - img [ref=f10e63]
+    - generic [ref=f10e65]:
+      - generic [ref=f10e69]:
+        - list [ref=f10e72]:
+          - generic [ref=f10e73]:
+            - listitem [ref=f10e74]:
+              - link "Project Overview" [ref=f10e75] [cursor=pointer]:
+                - /url: /dashboard/project/zisushntyziyinvkfmgy
+                - img [ref=f10e76]
+                - generic: Project Overview
+            - listitem [ref=f10e78]:
+              - button "Table Editor" [disabled]:
+                - img
+                - generic: Table Editor
+            - listitem [ref=f10e79]:
+              - button "SQL Editor" [disabled]:
+                - img
+                - generic: SQL Editor
+          - generic [ref=f10e80]:
+            - listitem [ref=f10e81]:
+              - button "Database" [disabled]:
+                - img
+                - generic: Database
+            - listitem [ref=f10e82]:
+              - button "Authentication" [disabled]:
+                - img
+                - generic: Authentication
+            - listitem [ref=f10e83]:
+              - button "Storage" [disabled]:
+                - img
+                - generic: Storage
+            - listitem [ref=f10e84]:
+              - link "Edge Functions" [ref=f10e85] [cursor=pointer]:
+                - /url: /dashboard/project/zisushntyziyinvkfmgy/functions
+                - img [ref=f10e86]
+                - generic: Edge Functions
+            - listitem [ref=f10e91]:
+              - button "Realtime" [disabled]:
+                - img
+                - generic: Realtime
+          - generic [ref=f10e92]:
+            - listitem [ref=f10e94]:
+              - button "Advisors" [disabled]:
+                - img
+                - generic: Advisors
+            - listitem [ref=f10e95]:
+              - button "Observability" [disabled]:
+                - img
+                - generic: Observability
+            - listitem [ref=f10e96]:
+              - link "Logs" [ref=f10e97] [cursor=pointer]:
+                - /url: /dashboard/project/zisushntyziyinvkfmgy/logs/explorer
+                - img [ref=f10e98]
+                - generic: Logs
+            - listitem [ref=f10e99]:
+              - button "Integrations" [disabled]:
+                - img
+                - generic: Integrations
+          - listitem [ref=f10e101]:
+            - link "Project Settings" [ref=f10e102] [cursor=pointer]:
+              - /url: /dashboard/project/zisushntyziyinvkfmgy/settings/general
+              - img [ref=f10e103]
+              - generic: Project Settings
+        - button "Sidebar control" [ref=f10e108] [cursor=pointer]:
+          - img [ref=f10e110]
+      - generic [ref=f10e117]:
+        - separator [ref=f10e121]:
+          - img [ref=f10e123]
+        - main [ref=f10e132]:
+          - img [ref=f10e135]
+  - alert [ref=f10e137]: Untitled query | SQL Editor | Supabase

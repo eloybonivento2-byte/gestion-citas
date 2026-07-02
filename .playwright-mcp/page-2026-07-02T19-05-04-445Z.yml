@@ -1,0 +1,377 @@
+- generic [ref=f10e1]:
+  - generic [ref=f10e3]:
+    - generic [ref=f10e4]:
+      - generic [ref=f10e141]:
+        - generic [ref=f10e143]:
+          - img [ref=f10e144]
+          - generic [ref=f10e146]:
+            - paragraph [ref=f10e147]: We are investigating a technical issue
+            - generic [ref=f10e148]:
+              - generic [ref=f10e149]: ·
+              - generic [ref=f10e150]:
+                - text: Follow the
+                - link "status page" [ref=f10e151] [cursor=pointer]:
+                  - /url: https://status.supabase.com
+                - text: for updates
+        - button "Dismiss banner" [ref=f10e152] [cursor=pointer]:
+          - img [ref=f10e154]
+      - banner [ref=f10e6]:
+        - generic [ref=f10e7]:
+          - generic [ref=f10e8]:
+            - link "Supabase" [ref=f10e9] [cursor=pointer]:
+              - /url: /dashboard/org/aejshpuehznkayjsfxmf
+              - img "Supabase" [ref=f10e10]
+            - generic [ref=f10e11]:
+              - img [ref=f10e158]
+              - generic [ref=f10e160]:
+                - link "Bienestar Free" [ref=f10e161] [cursor=pointer]:
+                  - /url: /dashboard/org/aejshpuehznkayjsfxmf
+                  - img [ref=f10e162]
+                  - generic [ref=f10e172]: Bienestar
+                  - generic [ref=f10e173]: Free
+                - button [ref=f10e174] [cursor=pointer]:
+                  - img [ref=f10e176]
+              - generic [ref=f10e12]:
+                - img [ref=f10e14]
+                - generic [ref=f10e179]:
+                  - link "gestion-citas" [ref=f10e180] [cursor=pointer]:
+                    - /url: /dashboard/project/zisushntyziyinvkfmgy
+                    - img [ref=f10e181]
+                    - generic "gestion-citas" [ref=f10e184]
+                  - button [ref=f10e185] [cursor=pointer]:
+                    - img [ref=f10e187]
+                - img [ref=f10e191]
+                - generic [ref=f10e193]:
+                  - link "main Production" [ref=f10e194] [cursor=pointer]:
+                    - /url: /dashboard/project/zisushntyziyinvkfmgy
+                    - generic "main" [ref=f10e195]
+                    - generic [ref=f10e196]: Production
+                  - button [ref=f10e197] [cursor=pointer]:
+                    - img [ref=f10e199]
+            - button "Connect" [ref=f10e202] [cursor=pointer]:
+              - img [ref=f10e204]
+              - generic [ref=f10e206]: Connect
+          - generic [ref=f10e23]:
+            - generic [ref=f10e25] [cursor=pointer]: Feedback
+            - generic [ref=f10e26]:
+              - button "Search..." [ref=f10e27]:
+                - generic [ref=f10e28]:
+                  - img [ref=f10e29]
+                  - paragraph [ref=f10e32]: Search...
+                - generic [ref=f10e34]: Ctrl K
+              - button "Help" [ref=f10e789] [cursor=pointer]:
+                - generic [ref=f10e36]:
+                  - img [ref=f10e37]
+                  - generic [ref=f10e40]: Help
+              - button "Advisor Center" [ref=f10e790] [cursor=pointer]:
+                - generic [ref=f10e43]:
+                  - img [ref=f10e44]
+                  - generic [ref=f10e46]: Advisor Center
+              - button "SQL Editor" [ref=f10e791] [cursor=pointer]:
+                - generic [ref=f10e48]:
+                  - img [ref=f10e49]
+                  - generic [ref=f10e51]: SQL Editor
+              - button "AI Assistant" [ref=f10e792] [cursor=pointer]:
+                - generic [ref=f10e53]:
+                  - img [ref=f10e56]
+                  - generic [ref=f10e59]: AI Assistant
+            - button [ref=f10e60] [cursor=pointer]:
+              - figure [ref=f10e207]:
+                - img [ref=f10e208]
+      - generic [ref=f10e65]:
+        - generic [ref=f10e69]:
+          - list [ref=f10e72]:
+            - generic [ref=f10e73]:
+              - listitem [ref=f10e74]:
+                - link "Project Overview" [ref=f10e75] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy
+                  - img [ref=f10e76]
+                  - generic: Project Overview
+              - listitem [ref=f10e78]:
+                - link "Table Editor" [ref=f10e210] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/editor
+                  - img [ref=f10e211]
+                  - generic: Table Editor
+              - listitem [ref=f10e79]:
+                - link "SQL Editor" [ref=f10e213] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/sql
+                  - img [ref=f10e214]
+                  - generic: SQL Editor
+            - generic [ref=f10e80]:
+              - listitem [ref=f10e81]:
+                - link "Database" [ref=f10e216] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/database/schemas
+                  - img [ref=f10e217]
+                  - generic: Database
+              - listitem [ref=f10e82]:
+                - link "Authentication" [ref=f10e221] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/users
+                  - img [ref=f10e222]
+                  - generic: Authentication
+              - listitem [ref=f10e83]:
+                - link "Storage" [ref=f10e224] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/storage/files
+                  - img [ref=f10e225]
+                  - generic: Storage
+              - listitem [ref=f10e84]:
+                - link "Edge Functions" [ref=f10e85] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/functions
+                  - img [ref=f10e86]
+                  - generic: Edge Functions
+              - listitem [ref=f10e91]:
+                - link "Realtime" [ref=f10e227] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/realtime/inspector
+                  - img [ref=f10e228]
+                  - generic: Realtime
+            - generic [ref=f10e92]:
+              - listitem [ref=f10e94]:
+                - link "Advisors" [ref=f10e230] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/advisors/security
+                  - img [ref=f10e231]
+                  - generic: Advisors
+              - listitem [ref=f10e95]:
+                - link "Observability" [ref=f10e233] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/observability
+                  - img [ref=f10e234]
+                  - generic: Observability
+              - listitem [ref=f10e96]:
+                - link "Logs" [ref=f10e97] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/logs
+                  - img [ref=f10e98]
+                  - generic: Logs
+              - listitem [ref=f10e99]:
+                - link "Integrations" [ref=f10e242] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/integrations
+                  - img [ref=f10e243]
+                  - generic: Integrations
+            - listitem [ref=f10e101]:
+              - link "Project Settings" [ref=f10e102] [cursor=pointer]:
+                - /url: /dashboard/project/zisushntyziyinvkfmgy/settings/general
+                - img [ref=f10e103]
+                - generic: Project Settings
+          - button "Sidebar control" [ref=f10e108] [cursor=pointer]:
+            - img [ref=f10e110]
+        - generic [ref=f10e117]:
+          - generic [ref=f10e246]:
+            - heading "SQL Editor" [level=4] [ref=f10e248]
+            - generic [ref=f10e250]:
+              - generic [ref=f10e251]:
+                - generic [ref=f10e252]:
+                  - generic [ref=f10e254]:
+                    - generic [ref=f10e255]: Search queries
+                    - textbox "Search queries..." [ref=f10e256]
+                    - button [ref=f10e257]:
+                      - img [ref=f10e258]
+                    - img [ref=f10e261]
+                  - button "Create a new query" [ref=f10e264] [cursor=pointer]:
+                    - img [ref=f10e266]
+                - button "Shared" [ref=f10e269]:
+                  - img [ref=f10e270]
+                  - generic [ref=f10e272]: Shared
+                - button "Favorites" [ref=f10e275]:
+                  - img [ref=f10e276]
+                  - generic [ref=f10e278]: Favorites
+                - generic [ref=f10e280]:
+                  - button "PRIVATE (9)" [expanded] [ref=f10e281]:
+                    - img [ref=f10e282]
+                    - generic [ref=f10e284]: PRIVATE (9)
+                  - tree "private-snippets" [ref=f10e286]:
+                    - generic "Untitled query" [ref=f10e287] [cursor=pointer]:
+                      - generic [ref=f10e288]:
+                        - img [ref=f10e289]
+                        - generic [ref=f10e295]: Untitled query
+                    - generic "Untitled query" [ref=f10e296] [cursor=pointer]:
+                      - generic [ref=f10e297]:
+                        - img [ref=f10e298]
+                        - generic [ref=f10e304]: Untitled query
+                    - generic "Untitled query" [ref=f10e305] [cursor=pointer]:
+                      - generic [ref=f10e306]:
+                        - img [ref=f10e307]
+                        - generic [ref=f10e313]: Untitled query
+                    - generic "Roles and Permissions Table" [ref=f10e314] [cursor=pointer]:
+                      - generic [ref=f10e315]:
+                        - img [ref=f10e316]
+                        - generic [ref=f10e322]: Roles and Permissions Table
+                    - generic "Roles and Permissions Table" [ref=f10e323] [cursor=pointer]:
+                      - generic [ref=f10e324]:
+                        - img [ref=f10e325]
+                        - generic [ref=f10e331]: Roles and Permissions Table
+                    - generic "Auditoría y configuración del sistema con RLS" [ref=f10e332] [cursor=pointer]:
+                      - generic [ref=f10e333]:
+                        - img [ref=f10e334]
+                        - generic [ref=f10e340]: Auditoría y configuración del sistema con RLS
+                    - generic "Dashboard KPIs and Monthly Appointment Trends" [ref=f10e341] [cursor=pointer]:
+                      - generic [ref=f10e342]:
+                        - img [ref=f10e343]
+                        - generic [ref=f10e349]: Dashboard KPIs and Monthly Appointment Trends
+                    - generic "Role-Based Profile View Policy" [ref=f10e350] [cursor=pointer]:
+                      - generic [ref=f10e351]:
+                        - img [ref=f10e352]
+                        - generic [ref=f10e358]: Role-Based Profile View Policy
+                    - generic "Esquema de Bienestar SENA con RLS y flujos de perfiles/turnos" [ref=f10e359] [cursor=pointer]:
+                      - generic [ref=f10e360]:
+                        - img [ref=f10e361]
+                        - generic [ref=f10e367]: Esquema de Bienestar SENA con RLS y flujos de perfiles/turnos
+                - generic [ref=f10e369]:
+                  - button "Reference" [expanded] [ref=f10e370]:
+                    - img [ref=f10e371]
+                    - generic [ref=f10e373]: Reference
+                  - generic [ref=f10e374]:
+                    - link "templates" [ref=f10e375] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/sql/templates
+                      - img [ref=f10e376]
+                      - text: templates
+                    - link "examples" [ref=f10e378] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/sql/examples
+                      - img [ref=f10e379]
+                      - text: examples
+              - button "View running queries" [ref=f10e383] [cursor=pointer]:
+                - generic [ref=f10e384]: View running queries
+          - separator [ref=f10e121]:
+            - img [ref=f10e123]
+          - main [ref=f10e132]:
+            - generic [ref=f10e385]:
+              - generic [ref=f10e386]:
+                - generic [ref=f10e387]:
+                  - button "Collapse sidebar" [ref=f10e388]:
+                    - img [ref=f10e389]
+                    - generic [ref=f10e392]: Collapse sidebar
+                  - tablist [ref=f10e393]:
+                    - button "Untitled query" [ref=f10e395]:
+                      - tab "Untitled query" [selected] [ref=f10e396]:
+                        - img [ref=f10e397]
+                        - generic [ref=f10e404]: Untitled query
+                        - button [ref=f10e405] [cursor=pointer]:
+                          - img [ref=f10e406]
+                      - separator [ref=f10e410]
+                    - button [ref=f10e411]:
+                      - img [ref=f10e412]
+                - status [ref=f10e414]
+              - generic [ref=f10e417]:
+                - code [ref=f10e424]:
+                  - generic [ref=f10e425]:
+                    - generic [ref=f10e427]:
+                      - generic [ref=f10e623]: "1"
+                      - generic [ref=f10e625]: "2"
+                      - generic [ref=f10e627]: "3"
+                      - generic [ref=f10e629]: "4"
+                      - generic [ref=f10e631]: "5"
+                      - generic [ref=f10e633]: "6"
+                      - generic [ref=f10e634]:
+                        - generic [ref=f10e635] [cursor=pointer]: 
+                        - generic [ref=f10e636]: "7"
+                      - generic [ref=f10e638]: "8"
+                      - generic [ref=f10e640]: "9"
+                      - generic [ref=f10e642]: "10"
+                      - generic [ref=f10e644]: "11"
+                      - generic [ref=f10e646]: "12"
+                      - generic [ref=f10e648]: "13"
+                      - generic [ref=f10e649]:
+                        - generic [ref=f10e650] [cursor=pointer]: 
+                        - generic [ref=f10e651]: "14"
+                      - generic [ref=f10e653]: "15"
+                      - generic [ref=f10e655]: "16"
+                      - generic [ref=f10e657]: "17"
+                      - generic [ref=f10e659]: "18"
+                      - generic [ref=f10e661]: "19"
+                      - generic [ref=f10e663]: "20"
+                    - generic [ref=f10e447]:
+                      - generic [ref=f10e693]: "-- ============================================="
+                      - generic [ref=f10e695]: "-- SCRIPT COMPLETO DE REPARACIÓN"
+                      - generic [ref=f10e697]: "-- Ejecutar en Supabase SQL Editor"
+                      - generic [ref=f10e699]: "-- ============================================="
+                      - generic [ref=f10e702]: "-- 1. INSERTAR DEPENDENCIAS FALTANTES"
+                      - generic [ref=f10e704]: INSERT INTO dependencies (name, color) VALUES
+                      - generic [ref=f10e706]: ('Psicología', '#3b82f6'),
+                      - generic [ref=f10e708]: ('Enfermería', '#22c55e'),
+                      - generic [ref=f10e710]: ('Trabajo Social', '#f59e0b')
+                      - generic [ref=f10e712]: ON CONFLICT DO NOTHING;
+                      - generic [ref=f10e715]: "-- 2. INSERTAR CONFIGURACIÓN DEL SISTEMA"
+                      - generic [ref=f10e717]: INSERT INTO system_config (key, value) VALUES
+                      - generic [ref=f10e719]: ('max_appointments_per_day', '30'),
+                      - generic [ref=f10e721]: ('appointment_advance_days', '1'),
+                      - generic [ref=f10e723]: ('enable_notifications', 'true'),
+                      - generic [ref=f10e725]: ('require_approval', 'false')
+                      - generic [ref=f10e727]: ON CONFLICT (key) DO NOTHING;
+                    - textbox "Editor content" [active] [ref=f10e458]: "-- ============================================= -- SCRIPT COMPLETO DE REPARACIÓN -- Ejecutar en Supabase SQL Editor -- ============================================= -- 1. INSERTAR DEPENDENCIAS FALTANTES INSERT INTO dependencies (name, color) VALUES ('Psicología', '#3b82f6'), ('Enfermería', '#22c55e'), ('Trabajo Social', '#f59e0b')"
+                - separator [ref=f10e459]:
+                  - img [ref=f10e461]
+                - generic [ref=f10e470]:
+                  - tablist [ref=f10e471]:
+                    - generic [ref=f10e472]:
+                      - tab "Results" [selected] [ref=f10e473]:
+                        - generic [ref=f10e474]: Results
+                      - tab "Chart" [ref=f10e475]:
+                        - generic [ref=f10e476]: Chart
+                      - button "Export" [disabled]:
+                        - generic: Export
+                        - generic:
+                          - img
+                    - generic [ref=f10e477]:
+                      - button [ref=f10e478] [cursor=pointer]:
+                        - img [ref=f10e480]
+                      - generic [ref=f10e485]:
+                        - generic [ref=f10e486] [cursor=pointer]:
+                          - generic [ref=f10e487]: Source
+                          - button "Primary database" [ref=f10e488]:
+                            - generic [ref=f10e489]: Primary database
+                            - img [ref=f10e491]
+                        - button "Role postgres" [ref=f10e493] [cursor=pointer]:
+                          - generic [ref=f10e495]:
+                            - generic [ref=f10e496]: Role
+                            - generic [ref=f10e497]: postgres
+                            - img [ref=f10e498]
+                        - button "Run" [ref=f10e733] [cursor=pointer]:
+                          - generic [ref=f10e501]: Run
+                          - generic [ref=f10e793]: Ctrl ↵
+                  - generic [ref=f10e794]:
+                    - generic [ref=f10e795]:
+                      - generic [ref=f10e796]: "Failed to run sql query: ERROR: 42P13: cannot change return type of existing function"
+                      - generic [ref=f10e797]: "DETAIL: Row type defined by OUT parameters is different."
+                      - generic [ref=f10e798]: "HINT: Use DROP FUNCTION get_dashboard_kpis(date,date) first."
+                    - generic [ref=f10e799]:
+                      - button [ref=f10e800]:
+                        - button [ref=f10e801] [cursor=pointer]:
+                          - img [ref=f10e803]
+                      - generic [ref=f10e806]:
+                        - button "Debug with Assistant" [ref=f10e807] [cursor=pointer]:
+                          - img [ref=f10e811]
+                          - generic [ref=f10e814]: Debug with Assistant
+                        - button [ref=f10e815] [cursor=pointer]:
+                          - img [ref=f10e817]
+                - generic "Table grid footer" [ref=f10e819]:
+                  - button "0 row" [ref=f10e820]:
+                    - paragraph [ref=f10e821]:
+                      - generic [ref=f10e822]: 0 row
+    - generic [ref=f10e511]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=f10e512]:
+        - button "Close banner" [ref=f10e514] [cursor=pointer]:
+          - img [ref=f10e516]
+        - generic [ref=f10e519]:
+          - generic [ref=f10e520]:
+            - generic [ref=f10e521]: Beta
+            - generic [ref=f10e523]:
+              - generic [ref=f10e844]:
+                - generic [ref=f10e846]: 02 Jul 26 14:05:04
+                - generic [ref=f10e847]: "200"
+              - generic [ref=f10e849]:
+                - generic [ref=f10e851]: 02 Jul 26 14:05:01
+                - generic [ref=f10e852]: "400"
+              - generic [ref=f10e854]:
+                - generic [ref=f10e856]: 02 Jul 26 14:04:58
+                - generic [ref=f10e857]: "304"
+              - generic [ref=f10e859]:
+                - generic [ref=f10e861]: 02 Jul 26 14:04:55
+                - generic [ref=f10e862]: "200"
+          - generic [ref=f10e544]:
+            - paragraph [ref=f10e545]: Unified Logs is here
+            - paragraph [ref=f10e546]: Search and correlate logs across all of your services from a single place.
+          - link "Explore Unified Logs" [ref=f10e548] [cursor=pointer]:
+            - /url: /dashboard/project/zisushntyziyinvkfmgy/logs
+            - generic [ref=f10e549]: Explore Unified Logs
+  - alert [ref=f10e137]: Untitled query | SQL Editor | gestion-citas | Bienestar | Supabase
+  - generic [ref=f10e550]:
+    - alert
+    - alert

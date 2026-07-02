@@ -1,0 +1,26 @@
+- generic [ref=f14e2]:
+  - navigation [ref=f14e43]:
+    - generic [ref=f14e44]:
+      - img [ref=f14e45]
+      - generic [ref=f14e47]: SENA Bienestar
+    - generic [ref=f14e48]:
+      - generic [ref=f14e49]:
+        - generic [ref=f14e50]: Test Usuario
+        - generic [ref=f14e51]: Aprendiz
+      - link "Mi perfil" [ref=f14e52] [cursor=pointer]:
+        - /url: /profile
+        - img [ref=f14e53]
+      - button "Cerrar sesión" [ref=f14e56] [cursor=pointer]:
+        - img [ref=f14e57]
+  - generic [ref=f14e60]:
+    - banner [ref=f14e61]:
+      - generic [ref=f14e62]:
+        - img [ref=f14e64]
+        - generic [ref=f14e66]:
+          - heading "Gestión de Citas de Bienestar" [level=1] [ref=f14e67]
+          - paragraph [ref=f14e68]: Administra y coordina tus citas de bienestar personal de manera rápida y eficiente
+      - button "Nueva Cita" [ref=f14e69] [cursor=pointer]:
+        - img [ref=f14e70]
+        - generic [ref=f14e71]: Nueva Cita
+    - paragraph [ref=f14e73]: Cargando tus citas...
+  - region "Notifications alt+T"
