@@ -1,5 +1,3 @@
-import React from 'react'
-
 export function KPICard({ title, value, subtitle, trend, color}) {
   return (
     <div className='kpi-card' style={{ borderTop: `4px solid ${color}`}}>

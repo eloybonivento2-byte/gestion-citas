@@ -5,7 +5,7 @@ import { DependencyChart } from "../components/DependencyChart";
 import { MonthlyTrendChart } from "../components/MonthlyTrendChart";
 import { ProfessionalTable } from "../components/ProfessionalTable";
 import { Navbar } from "../../../shared/components/Navbar";
-import { Download, RefreshCcw, Calendar } from "lucide-react";
+import { Download, Calendar } from "lucide-react";
 import { format, subMonths } from "date-fns";
 
 

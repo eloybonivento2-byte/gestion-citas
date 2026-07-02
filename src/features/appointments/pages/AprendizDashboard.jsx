@@ -3,7 +3,7 @@ import { useAppointments } from "../hooks/useAppointments";
 import { AppointmentForm } from "../components/AppointmentForm";
 import { AppointmentCard } from "../components/AppointmentCard";
 import { Navbar } from "../../../shared/components/Navbar";
-import { Plus, Calendar, Clock, Edit, X } from "lucide-react";
+import { Plus, Calendar, X } from "lucide-react";
 
 export default function AprendizDashboard() {
   const { appointments, fetchAppointments, cancelAppointment, rescheduleAppointment, editAppointment, isLoading } =

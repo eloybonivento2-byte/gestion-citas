@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAdmin } from "../hooks/useAdmin";
-import { Search, UserPlus, MoreVertical, CheckCircle, XCircle, Pencil } from "lucide-react";
+import { Search, UserPlus, CheckCircle, XCircle, Pencil } from "lucide-react";
 import { UserFormModal } from "./UserFormModal";
 
 const ROLES = [

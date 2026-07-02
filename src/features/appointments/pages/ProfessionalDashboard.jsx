@@ -4,7 +4,7 @@ import { AppointmentCard } from "../components/AppointmentCard";
 import { AssignProfessionalModal } from "../components/AssignProfessionalModal";
 import { useAuth } from "../../../providers/AuthProvider";
 import { Navbar } from "../../../shared/components/Navbar";
-import { UserCheck, Stethoscope, Clock, Calendar } from "lucide-react";
+import { UserCheck } from "lucide-react";
 
 export default function ProfessionalDashboard() {
   const {
@@ -17,11 +17,8 @@ export default function ProfessionalDashboard() {
   } = useAppointments();
   const { profile } = useAuth();
   const [filter, setFilter] = useState("pending");
-  const [showRescheduleForm, setShowRescheduleForm] = useState(false);
-  const [selectedAppointment, setSelectedAppointment] = useState(null);
-  const [rescheduleDate, setRescheduleDate] = useState("");
-  const [rescheduleTime, setRescheduleTime] = useState("08:00");
   const [showAssignModal, setShowAssignModal] = useState(false);
+  const [selectedAppointment, setSelectedAppointment] = useState(null);
   const [professionals, setProfessionals] = useState([]);
 
   useEffect(() => {
