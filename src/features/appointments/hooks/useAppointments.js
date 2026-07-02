@@ -21,6 +21,7 @@ export function useAppointments() {
   // FETCH: Obtener citas según el rol automáticamente
   const fetchAppointments = useCallback(
     async (filters = {}) => {
+      if (!user) return [];
       setStatus(STATUS.FETCHING);
       setError(null);
 
@@ -100,10 +101,16 @@ export function useAppointments() {
     
     try {
       // Verificar disponibilidad para el nuevo horario (excluyendo la cita actual)
+      const appointment = appointments.find((a) => a.id === appointmentId);
+      if (!appointment) {
+        throw new Error("Cita no encontrada");
+      }
+
       const isAvailable = await AppointmentRepository.checkAvailability(
-        appointmentId,
+        appointment.dependency_id,
         newDate,
         newTime,
+        appointmentId,
       );
       
       if (!isAvailable) {

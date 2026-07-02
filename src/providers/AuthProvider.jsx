@@ -17,8 +17,11 @@ export function AuthProvider({ children }) {
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const profileFetchingRef = useState({ current: false })[0];
 
   const fetchProfile = useCallback(async (userId) => {
+    if (profileFetchingRef.current) return;
+    profileFetchingRef.current = true;
     try {
       const { data, error } = await supabase
         .from("profiles")
@@ -31,8 +34,10 @@ export function AuthProvider({ children }) {
     } catch (err) {
       console.error("Error cargando perfil", err);
       setError("No se pudo cargar el perfil de usuario");
+    } finally {
+      profileFetchingRef.current = false;
     }
-  }, []);
+  }, [profileFetchingRef]);
 
   useEffect(() => {
     let mounted = true;
@@ -141,7 +146,8 @@ export function AuthProvider({ children }) {
   };
 
   const hasRole = (requiredRoles) => {
-    if (!profile?.roles?.name) return false;
+    if (!profile) return false;
+    if (!profile.roles?.name) return false;
     if (Array.isArray(requiredRoles)) {
       return requiredRoles.includes(profile.roles.name);
     }

@@ -7,11 +7,11 @@ export function ProtectedRoute({
   requiredRoles = null, // null = cualquier usuario logueado
   fallback = "/login", // a dónde redirigir si no tiene acceso
 }) {
-  const { user, loading, hasRole } = useAuth();
+  const { user, loading, profile, hasRole } = useAuth();
   const location = useLocation();
 
-  // 1. Esperar a cargar sesión
-  if (loading) {
+  // 1. Esperar a cargar sesión Y perfil
+  if (loading || (user && !profile)) {
     return (
       <div
         style={{

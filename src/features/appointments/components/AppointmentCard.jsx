@@ -26,8 +26,8 @@ export function AppointmentCard({ appointment, onCancel, isAprendiz, onAssignPro
     reason,
     user,
     professional,
-  } = appointment;
-  const config = STATUS_CONFIG[status];
+  } = appointment || {};
+  const config = STATUS_CONFIG[status] || STATUS_CONFIG.pending;
   const Icon = config.icon;
 
   return (
@@ -51,7 +51,7 @@ export function AppointmentCard({ appointment, onCancel, isAprendiz, onAssignPro
       <div className="card-datetime">
         <div className="datetime-item">
           <Calendar size={16} />
-          <span>{format(parseISO(scheduled_date), "PPP", { locale: es })}</span>
+          <span>{scheduled_date ? format(parseISO(scheduled_date), "PPP", { locale: es }) : "Sin fecha"}</span>
         </div>
         <div className="datetime-item">
           <Clock size={16} />
