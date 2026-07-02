@@ -4,6 +4,7 @@ import { AppointmentCard } from "../components/AppointmentCard";
 import { AssignProfessionalModal } from "../components/AssignProfessionalModal";
 import { useAuth } from "../../../providers/AuthProvider";
 import { Navbar } from "../../../shared/components/Navbar";
+import { BottomNav } from "../../../shared/components/BottomNav";
 import { UserCheck } from "lucide-react";
 
 export default function ProfessionalDashboard() {
@@ -125,6 +126,7 @@ export default function ProfessionalDashboard() {
           onAssign={assignProfessional}
         />
       )}
+      <BottomNav />
     </>
   );
 }

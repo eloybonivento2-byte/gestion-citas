@@ -1,13 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gestion-citas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+    <title>SENA Citas - Gestión de Citas</title>
+    <meta name="description" content="App de gestión de citas de bienestar para aprendices SENA" />
+    <meta name="theme-color" content="#39a900" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SENA Citas" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="SENA Citas" />
+    <meta name="msapplication-TileColor" content="#39a900" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      @media (display-mode: standalone) {
+        body { padding-top: env(safe-area-inset-top); }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js").catch(() => {});
+        });
+      }
+    </script>
   </body>
 </html>

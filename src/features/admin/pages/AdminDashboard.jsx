@@ -3,6 +3,7 @@ import { UserManagement } from "./components/UserManagement";
 import { AuditLogViewer } from "./components/AuditLogViewer";
 import { SystemConfig } from "./components/SystemConfig";
 import { Navbar } from "../../../shared/components/Navbar";
+import { BottomNav } from "../../../shared/components/BottomNav";
 import { Users, ClipboardList, Settings } from "lucide-react";
 
 const TABS = [
@@ -42,6 +43,7 @@ export default function AdminDashboard() {
       {activeTab === "audit" && <AuditLogViewer />}
       {activeTab === "config" && <SystemConfig />}
     </div>
+    <BottomNav />
     </>
   );
 }

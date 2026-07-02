@@ -3,6 +3,7 @@ import { useAppointments } from "../hooks/useAppointments";
 import { AppointmentForm } from "../components/AppointmentForm";
 import { AppointmentCard } from "../components/AppointmentCard";
 import { Navbar } from "../../../shared/components/Navbar";
+import { BottomNav } from "../../../shared/components/BottomNav";
 import { Plus, Calendar, X } from "lucide-react";
 
 export default function AprendizDashboard() {
@@ -45,33 +46,29 @@ export default function AprendizDashboard() {
   return (
     <>
       <Navbar />
-      <div className="dashboard-container">
+      <main id="main-content" className="dashboard-container" role="main">
         <header className="dashboard-header">
           <div className="header-content">
             <div className="header-icon">
               <Calendar size={32} />
             </div>
             <div className="header-text">
-              <h1 className="main-title">Gestión de Citas de Bienestar</h1>
-              <p className="subtitle">Administra y coordina tus citas de bienestar personal de manera rápida y eficiente</p>
+              <h1 className="main-title">Gestión de Citas</h1>
+              <p className="subtitle">Administra tus citas de bienestar</p>
             </div>
           </div>
-          <button 
-            onClick={() => setShowForm(true)} 
+          <button
+            onClick={() => setShowForm(true)}
             className="btn-primary create-appointment-btn"
-            style={{
-              '--btn-shadow': '0 4px 14px rgba(59, 130, 246, 0.4)',
-              '--btn-hover-shadow': '0 6px 20px rgba(59, 130, 246, 0.6)'
-            }}
+            aria-label="Crear nueva cita"
           >
-            <Plus size={20} className="btn-icon" />
+            <Plus size={20} />
             <span>Nueva Cita</span>
-            <div className="btn-ripple"></div>
           </button>
         </header>
 
         {showForm && (
-          <div className="modal-overlay" onClick={() => setShowForm(false)}>
+          <div className="modal-overlay" role="dialog" aria-modal="true" aria-label="Nueva cita">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <h2>Solicitar Nueva Cita</h2>
               <AppointmentForm
@@ -85,11 +82,11 @@ export default function AprendizDashboard() {
         )}
 
         {showRescheduleForm && selectedAppointment && (
-          <div className="modal-overlay" onClick={() => setShowRescheduleForm(false)}>
+          <div className="modal-overlay" role="dialog" aria-modal="true" aria-label="Reprogramar cita">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <header className="section-header">
                 <h2>Reprogramar Cita</h2>
-                <button className="btn-icon" onClick={() => setShowRescheduleForm(false)}>
+                <button className="btn-icon" onClick={() => setShowRescheduleForm(false)} aria-label="Cerrar">
                   <X size={20} />
                 </button>
               </header>
@@ -104,8 +101,9 @@ export default function AprendizDashboard() {
 
               <div className="field-row">
                 <div className="field">
-                  <label>Nueva Fecha</label>
+                  <label htmlFor="reschedule-date">Nueva Fecha</label>
                   <input
+                    id="reschedule-date"
                     type="date"
                     value={rescheduleDate}
                     onChange={(e) => setRescheduleDate(e.target.value)}
@@ -114,8 +112,9 @@ export default function AprendizDashboard() {
                 </div>
 
                 <div className="field">
-                  <label>Nueva Hora</label>
+                  <label htmlFor="reschedule-time">Nueva Hora</label>
                   <select
+                    id="reschedule-time"
                     value={rescheduleTime}
                     onChange={(e) => setRescheduleTime(e.target.value)}
                   >
@@ -167,12 +166,13 @@ export default function AprendizDashboard() {
         )}
 
         {showEditForm && selectedAppointment && (
-          <div className="modal-overlay" onClick={() => setShowEditForm(false)}>
+          <div className="modal-overlay" role="dialog" aria-modal="true" aria-label="Editar cita">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
               <h2>Editar Datos de la Cita</h2>
               <div className="field">
-                <label>Motivo</label>
+                <label htmlFor="edit-reason">Motivo</label>
                 <textarea
+                  id="edit-reason"
                   value={editFormData.reason}
                   onChange={(e) => setEditFormData({ ...editFormData, reason: e.target.value })}
                   rows="4"
@@ -189,11 +189,15 @@ export default function AprendizDashboard() {
           </div>
         )}
 
-        <section className="appointments-list">
+        <section className="appointments-list" aria-label="Lista de citas">
           {isLoading ? (
-            <p>Cargando tus citas...</p>
+            <div className="loading-screen" role="status">
+              <div className="loading-spinner" />
+              <p>Cargando tus citas...</p>
+            </div>
           ) : appointments.length === 0 ? (
             <div className="empty-state">
+              <Calendar size={48} style={{ margin: "0 auto 1rem", color: "#9ca3af" }} />
               <p>No tienes citas agendadas</p>
               <button onClick={() => setShowForm(true)} className="btn-link">
                 Agenda tu primera cita aquí
@@ -212,7 +216,8 @@ export default function AprendizDashboard() {
             ))
           )}
         </section>
-      </div>
+      </main>
+      <BottomNav />
     </>
   );
 }

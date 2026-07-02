@@ -5,6 +5,7 @@ import { DependencyChart } from "../components/DependencyChart";
 import { MonthlyTrendChart } from "../components/MonthlyTrendChart";
 import { ProfessionalTable } from "../components/ProfessionalTable";
 import { Navbar } from "../../../shared/components/Navbar";
+import { BottomNav } from "../../../shared/components/BottomNav";
 import { Download, Calendar } from "lucide-react";
 import { format, subMonths } from "date-fns";
 
@@ -113,6 +114,7 @@ export default function CoordinationDashboard() {
         <ProfessionalTable data={professionals}/>
       </section>
     </div>
+    <BottomNav />
     </>
   );
 }

@@ -1,86 +1,133 @@
 .btn-primary {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-sm);
   padding: 0.6rem 1.2rem;
   background-color: var(--sena-green);
   color: white;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+  min-height: var(--touch-target);
+  position: relative;
+  overflow: hidden;
 }
+
 .btn-primary:hover {
-  background-color: #2d8600;
+  background-color: var(--sena-green-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-primary:focus-visible {
+  outline: 3px solid var(--sena-green);
+  outline-offset: 2px;
 }
 
 .btn-secondary {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-sm);
   padding: 0.6rem 1.2rem;
   background-color: white;
   color: #374151;
   border: 1px solid #d1d5db;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  min-height: var(--touch-target);
 }
+
 .btn-secondary:hover {
   background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.btn-secondary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary:focus-visible {
+  outline: 3px solid var(--sena-green);
+  outline-offset: 2px;
 }
 
 .btn-success {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-sm);
   padding: 0.6rem 1.2rem;
   background-color: #22c55e;
   color: white;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast);
+  min-height: var(--touch-target);
 }
+
 .btn-success:hover {
   background-color: #16a34a;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-success:active {
+  transform: scale(0.98);
 }
 
 .btn-danger {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-sm);
   padding: 0.6rem 1.2rem;
   background-color: #ef4444;
   color: white;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast);
+  min-height: var(--touch-target);
+}
+
+.btn-danger:hover {
+  background-color: #dc2626;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-danger:active {
+  transform: scale(0.98);
 }
 
 .btn-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4rem;
+  padding: var(--space-xs);
   background: none;
   border: 1px solid #e5e7eb;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   color: #6b7280;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  min-width: var(--touch-target);
+  min-height: var(--touch-target);
 }
+
 .btn-icon:hover {
   background-color: #f3f4f6;
+  color: var(--sena-dark);
 }
 
 .btn-link {
@@ -91,8 +138,25 @@
   font-weight: 500;
   cursor: pointer;
   text-decoration: underline;
-  padding: 0;
+  padding: var(--space-xs);
+  min-height: var(--touch-target);
+  display: inline-flex;
+  align-items: center;
+  transition: color var(--transition-fast);
 }
+
 .btn-link:hover {
-  color: #2d8600;
+  color: var(--sena-green-dark);
+}
+
+/* Mobile: bigger touch targets */
+@media (pointer: coarse) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-success,
+  .btn-danger {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    min-height: var(--touch-target-lg);
+  }
 }

@@ -1,0 +1,36 @@
+{
+  "name": "SENA Bienestar - Gestión de Citas",
+  "short_name": "SENA Citas",
+  "description": "App de gestión de citas de bienestar para aprendices SENA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#39a900",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "categories": ["education", "health"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Nueva Cita",
+      "short_name": "Cita",
+      "url": "/dashboard",
+      "description": "Agendar una nueva cita de bienestar"
+    }
+  ]
+}
