@@ -22,7 +22,6 @@ export default function ProfessionalDashboard() {
   const [rescheduleDate, setRescheduleDate] = useState("");
   const [rescheduleTime, setRescheduleTime] = useState("08:00");
   const [showAssignModal, setShowAssignModal] = useState(false);
-  const [selectedAppointment, setSelectedAppointment] = useState(null);
   const [professionals, setProfessionals] = useState([]);
 
   useEffect(() => {
