@@ -1,4 +1,4 @@
-const { useEffect, useState } = "react";
+import { useEffect, useState } from "react";
 import { useAppointments } from "../hooks/useAppointments";
 import { AppointmentForm } from "../components/AppointmentForm";
 import { AppointmentCard } from "../components/AppointmentCard";
