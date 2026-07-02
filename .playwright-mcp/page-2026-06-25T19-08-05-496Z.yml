@@ -1,0 +1,496 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e402]:
+      - banner [ref=e404]:
+        - generic [ref=e405]:
+          - generic [ref=e406]:
+            - link "Supabase" [ref=e407] [cursor=pointer]:
+              - /url: /dashboard/org/aejshpuehznkayjsfxmf
+              - img "Supabase" [ref=e408]
+            - generic [ref=e409]:
+              - img [ref=e411]
+              - generic [ref=e413]:
+                - link "Bienestar Free" [ref=e414] [cursor=pointer]:
+                  - /url: /dashboard/org/aejshpuehznkayjsfxmf
+                  - img [ref=e415]
+                  - generic [ref=e425]: Bienestar
+                  - generic [ref=e426]: Free
+                - button [ref=e427] [cursor=pointer]:
+                  - img [ref=e429]
+              - generic [ref=e432]:
+                - img [ref=e434]
+                - generic [ref=e436]:
+                  - link "gestion-citas" [ref=e437] [cursor=pointer]:
+                    - /url: /dashboard/project/zisushntyziyinvkfmgy
+                    - img [ref=e438]
+                    - generic "gestion-citas" [ref=e441]
+                  - button [ref=e442] [cursor=pointer]:
+                    - img [ref=e444]
+                - img [ref=e448]
+                - generic [ref=e450]:
+                  - link "main Production" [ref=e451] [cursor=pointer]:
+                    - /url: /dashboard/project/zisushntyziyinvkfmgy
+                    - generic "main" [ref=e452]
+                    - generic [ref=e453]: Production
+                  - button [ref=e454] [cursor=pointer]:
+                    - img [ref=e456]
+            - button "Connect" [ref=e460] [cursor=pointer]:
+              - img [ref=e462]
+              - generic [ref=e464]: Connect
+          - generic [ref=e465]:
+            - generic [ref=e467] [cursor=pointer]: Feedback
+            - generic [ref=e468]:
+              - button "Search..." [ref=e469]:
+                - generic [ref=e470]:
+                  - img [ref=e471]
+                  - paragraph [ref=e474]: Search...
+                - generic [ref=e476]: Ctrl K
+              - button "Help" [ref=e477] [cursor=pointer]:
+                - generic [ref=e478]:
+                  - img [ref=e479]
+                  - generic [ref=e482]: Help
+              - button "Advisor Center" [ref=e484] [cursor=pointer]:
+                - generic [ref=e485]:
+                  - img [ref=e486]
+                  - generic [ref=e488]: Advisor Center
+              - button "SQL Editor" [ref=e489] [cursor=pointer]:
+                - generic [ref=e490]:
+                  - img [ref=e491]
+                  - generic [ref=e493]: SQL Editor
+              - button "AI Assistant" [ref=e494] [cursor=pointer]:
+                - generic [ref=e495]:
+                  - img [ref=e498]
+                  - generic [ref=e501]: AI Assistant
+            - button [ref=e502] [cursor=pointer]:
+              - figure [ref=e504]:
+                - img [ref=e505]
+      - generic [ref=e507]:
+        - generic [ref=e511]:
+          - list [ref=e514]:
+            - generic [ref=e515]:
+              - listitem [ref=e516]:
+                - link "Project Overview" [ref=e517] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy
+                  - img [ref=e518]
+                  - generic: Project Overview
+              - listitem [ref=e520]:
+                - link "Table Editor" [ref=e521] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/editor
+                  - img [ref=e522]
+                  - generic: Table Editor
+              - listitem [ref=e524]:
+                - link "SQL Editor" [ref=e525] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/sql
+                  - img [ref=e526]
+                  - generic: SQL Editor
+            - generic [ref=e528]:
+              - listitem [ref=e529]:
+                - link "Database" [ref=e530] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/database/schemas
+                  - img [ref=e531]
+                  - generic: Database
+              - listitem [ref=e535]:
+                - link "Authentication" [ref=e536] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/users
+                  - img [ref=e537]
+                  - generic: Authentication
+              - listitem [ref=e539]:
+                - link "Storage" [ref=e540] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/storage/files
+                  - img [ref=e541]
+                  - generic: Storage
+              - listitem [ref=e543]:
+                - link "Edge Functions" [ref=e544] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/functions
+                  - img [ref=e545]
+                  - generic: Edge Functions
+              - listitem [ref=e550]:
+                - link "Realtime" [ref=e551] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/realtime/inspector
+                  - img [ref=e552]
+                  - generic: Realtime
+            - generic [ref=e554]:
+              - listitem [ref=e556]:
+                - link "Advisors" [ref=e557] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/advisors/security
+                  - img [ref=e558]
+                  - generic: Advisors
+              - listitem [ref=e560]:
+                - link "Observability" [ref=e561] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/observability
+                  - img [ref=e562]
+                  - generic: Observability
+              - listitem [ref=e570]:
+                - link "Logs" [ref=e571] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/logs/explorer
+                  - img [ref=e572]
+                  - generic: Logs
+              - listitem [ref=e573]:
+                - link "Integrations" [ref=e574] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/integrations
+                  - img [ref=e575]
+                  - generic: Integrations
+            - listitem [ref=e579]:
+              - link "Project Settings" [ref=e580] [cursor=pointer]:
+                - /url: /dashboard/project/zisushntyziyinvkfmgy/settings/general
+                - img [ref=e581]
+                - generic: Project Settings
+          - button "Sidebar control" [ref=e586] [cursor=pointer]:
+            - img [ref=e588]
+        - generic [ref=e595]:
+          - generic [ref=e599]:
+            - heading "Authentication" [level=4] [ref=e601]
+            - menu "Sidebar" [disabled] [ref=e604]:
+              - list [ref=e605]:
+                - generic [ref=e608]:
+                  - generic [ref=e612]: Manage
+                  - generic [ref=e613]:
+                    - link "Users" [disabled] [ref=e614] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/users
+                      - menuitem "Users" [disabled] [ref=e615]:
+                        - generic [ref=e619]: Users
+                    - link "OAuth Apps" [disabled] [ref=e620] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/oauth-apps
+                      - menuitem "OAuth Apps" [disabled] [ref=e621]:
+                        - generic [ref=e625]: OAuth Apps
+                - generic [ref=e629]:
+                  - generic [ref=e633]: Notifications
+                  - link "Emails" [disabled] [ref=e635] [cursor=pointer]:
+                    - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/templates
+                    - menuitem "Emails" [disabled] [ref=e636]:
+                      - generic [ref=e640]: Emails
+                - generic [ref=e644]:
+                  - generic [ref=e648]: Configuration
+                  - generic [ref=e649]:
+                    - link "Policies" [disabled] [ref=e650] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/policies
+                      - menuitem "Policies" [disabled] [ref=e651]:
+                        - generic [ref=e655]: Policies
+                    - link "Sign In / Providers" [disabled] [ref=e656] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/providers
+                      - menuitem "Sign In / Providers" [disabled] [ref=e657]:
+                        - generic [ref=e661]: Sign In / Providers
+                    - link "Passkeys Beta" [disabled] [ref=e662] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/passkeys
+                      - menuitem "Passkeys Beta" [disabled] [ref=e663]:
+                        - generic [ref=e666]:
+                          - generic [ref=e667]: Passkeys
+                          - generic [ref=e668]: Beta
+                    - link "OAuth Server Beta" [disabled] [ref=e669] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/oauth-server
+                      - menuitem "OAuth Server Beta" [disabled] [ref=e670]:
+                        - generic [ref=e673]:
+                          - generic [ref=e674]: OAuth Server
+                          - generic [ref=e675]: Beta
+                    - link "Sessions" [disabled] [ref=e676] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/sessions
+                      - menuitem "Sessions" [disabled] [ref=e677]:
+                        - generic [ref=e681]: Sessions
+                    - link "Rate Limits" [disabled] [ref=e682] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/rate-limits
+                      - menuitem "Rate Limits" [disabled] [ref=e683]:
+                        - generic [ref=e687]: Rate Limits
+                    - link "Multi-Factor" [disabled] [ref=e688] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/mfa
+                      - menuitem "Multi-Factor" [disabled] [ref=e689]:
+                        - generic [ref=e693]: Multi-Factor
+                    - link "URL Configuration" [disabled] [ref=e694] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/url-configuration
+                      - menuitem "URL Configuration" [disabled] [ref=e695]:
+                        - generic [ref=e699]: URL Configuration
+                    - link "Attack Protection" [disabled] [ref=e700] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/protection
+                      - menuitem "Attack Protection" [disabled] [ref=e701]:
+                        - generic [ref=e705]: Attack Protection
+                    - link "Auth Hooks Beta" [disabled] [ref=e706] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/hooks
+                      - menuitem "Auth Hooks Beta" [disabled] [ref=e707]:
+                        - generic [ref=e710]:
+                          - generic [ref=e711]: Auth Hooks
+                          - generic [ref=e712]: Beta
+                    - link "Audit Logs" [disabled] [ref=e713] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/audit-logs
+                      - menuitem "Audit Logs" [disabled] [ref=e714]:
+                        - generic [ref=e718]: Audit Logs
+                    - link "Performance" [disabled] [ref=e719] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/performance
+                      - menuitem "Performance" [disabled] [ref=e720]:
+                        - generic [ref=e724]: Performance
+          - separator [disabled] [ref=e725]:
+            - img [ref=e727]
+          - main [ref=e736]:
+            - generic [ref=e737]:
+              - generic [ref=e738]:
+                - generic [ref=e743]:
+                  - heading "Sign In / Providers" [level=1] [ref=e744]
+                  - paragraph [ref=e745]: Configure authentication providers and login methods for your users
+                - navigation [ref=e746]:
+                  - menu [ref=e747]:
+                    - listitem [ref=e748]:
+                      - link "Supabase Auth" [ref=e749] [cursor=pointer]:
+                        - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/providers
+                    - listitem [ref=e750]:
+                      - link "Third-Party Auth" [ref=e751] [cursor=pointer]:
+                        - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/third-party
+              - generic [ref=e752]:
+                - generic [ref=e753]:
+                  - heading "User Signups" [level=2] [ref=e757]
+                  - generic [ref=e760]:
+                    - generic [ref=e763]:
+                      - generic [ref=e764]:
+                        - switch [checked] [ref=e765] [cursor=pointer]
+                        - checkbox [checked]
+                      - generic [ref=e766]:
+                        - generic [ref=e1139]: Allow new users to sign up
+                        - generic [ref=e769]: If this is disabled, new users will not be able to sign up to your application
+                    - generic [ref=e772]:
+                      - generic [ref=e773]:
+                        - switch [ref=e774] [cursor=pointer]
+                        - checkbox
+                      - generic [ref=e775]:
+                        - generic [ref=e1140]: Allow manual linking
+                        - generic [ref=e778]:
+                          - text: Enable
+                          - link "manual linking APIs" [ref=e779] [cursor=pointer]:
+                            - /url: https://supabase.com/docs/guides/auth/auth-identity-linking#manual-linking-beta
+                          - text: for your project
+                    - generic [ref=e782]:
+                      - generic [ref=e783]:
+                        - switch [ref=e784] [cursor=pointer]
+                        - checkbox
+                      - generic [ref=e785]:
+                        - generic [ref=e1141]: Allow anonymous sign-ins
+                        - generic [ref=e788]:
+                          - text: Enable
+                          - link "anonymous sign-ins" [ref=e789] [cursor=pointer]:
+                            - /url: https://supabase.com/docs/guides/auth/auth-anonymous
+                          - text: for your project
+                    - generic [ref=e792]:
+                      - generic [ref=e793]:
+                        - switch [active] [ref=e794] [cursor=pointer]
+                        - checkbox
+                      - generic [ref=e795]:
+                        - generic [ref=e1142]: Confirm email
+                        - generic [ref=e798]: Users will need to confirm their email address before signing in for the first time
+                    - generic [ref=e799]:
+                      - button "Cancel" [ref=e1143] [cursor=pointer]:
+                        - generic [ref=e1144]: Cancel
+                      - button "Save changes" [ref=e1145] [cursor=pointer]:
+                        - generic [ref=e1146]: Save changes
+                - generic [ref=e800]:
+                  - generic [ref=e803]:
+                    - heading "Auth Providers" [level=2] [ref=e804]
+                    - generic [ref=e805]: Authenticate your users through a suite of providers and login methods
+                  - generic [ref=e808]:
+                    - button "Email auth icon Email Enabled" [ref=e809] [cursor=pointer]:
+                      - img "Email auth icon" [ref=e811]
+                      - generic [ref=e812]: Email
+                      - generic [ref=e814]:
+                        - img [ref=e816]
+                        - generic [ref=e818]: Enabled
+                      - img [ref=e819]
+                    - button "Phone auth icon Phone Disabled" [ref=e821] [cursor=pointer]:
+                      - img "Phone auth icon" [ref=e823]
+                      - generic [ref=e824]: Phone
+                      - generic [ref=e826]: Disabled
+                      - img [ref=e827]
+                    - button "SAML 2.0 auth icon SAML 2.0 Disabled" [ref=e829] [cursor=pointer]:
+                      - img "SAML 2.0 auth icon" [ref=e831]
+                      - generic [ref=e832]: SAML 2.0
+                      - generic [ref=e834]: Disabled
+                      - img [ref=e835]
+                    - button "Web3 Wallet auth icon Web3 Wallet Disabled" [ref=e837] [cursor=pointer]:
+                      - img "Web3 Wallet auth icon" [ref=e839]
+                      - generic [ref=e840]: Web3 Wallet
+                      - generic [ref=e842]: Disabled
+                      - img [ref=e843]
+                    - button "Apple auth icon Apple Disabled" [ref=e845] [cursor=pointer]:
+                      - img "Apple auth icon" [ref=e847]
+                      - generic [ref=e848]: Apple
+                      - generic [ref=e850]: Disabled
+                      - img [ref=e851]
+                    - button "Azure auth icon Azure Disabled" [ref=e853] [cursor=pointer]:
+                      - img "Azure auth icon" [ref=e855]
+                      - generic [ref=e856]: Azure
+                      - generic [ref=e858]: Disabled
+                      - img [ref=e859]
+                    - button "Bitbucket auth icon Bitbucket Disabled" [ref=e861] [cursor=pointer]:
+                      - img "Bitbucket auth icon" [ref=e863]
+                      - generic [ref=e864]: Bitbucket
+                      - generic [ref=e866]: Disabled
+                      - img [ref=e867]
+                    - button "Discord auth icon Discord Disabled" [ref=e869] [cursor=pointer]:
+                      - img "Discord auth icon" [ref=e871]
+                      - generic [ref=e872]: Discord
+                      - generic [ref=e874]: Disabled
+                      - img [ref=e875]
+                    - button "Facebook auth icon Facebook Disabled" [ref=e877] [cursor=pointer]:
+                      - img "Facebook auth icon" [ref=e879]
+                      - generic [ref=e880]: Facebook
+                      - generic [ref=e882]: Disabled
+                      - img [ref=e883]
+                    - button "Figma auth icon Figma Disabled" [ref=e885] [cursor=pointer]:
+                      - img "Figma auth icon" [ref=e887]
+                      - generic [ref=e888]: Figma
+                      - generic [ref=e890]: Disabled
+                      - img [ref=e891]
+                    - button "GitHub auth icon GitHub Disabled" [ref=e893] [cursor=pointer]:
+                      - img "GitHub auth icon" [ref=e895]
+                      - generic [ref=e896]: GitHub
+                      - generic [ref=e898]: Disabled
+                      - img [ref=e899]
+                    - button "GitLab auth icon GitLab Disabled" [ref=e901] [cursor=pointer]:
+                      - img "GitLab auth icon" [ref=e903]
+                      - generic [ref=e904]: GitLab
+                      - generic [ref=e906]: Disabled
+                      - img [ref=e907]
+                    - button "Google auth icon Google Disabled" [ref=e909] [cursor=pointer]:
+                      - img "Google auth icon" [ref=e911]
+                      - generic [ref=e912]: Google
+                      - generic [ref=e914]: Disabled
+                      - img [ref=e915]
+                    - button "Kakao auth icon Kakao Disabled" [ref=e917] [cursor=pointer]:
+                      - img "Kakao auth icon" [ref=e919]
+                      - generic [ref=e920]: Kakao
+                      - generic [ref=e922]: Disabled
+                      - img [ref=e923]
+                    - button "KeyCloak auth icon KeyCloak Disabled" [ref=e925] [cursor=pointer]:
+                      - img "KeyCloak auth icon" [ref=e927]
+                      - generic [ref=e928]: KeyCloak
+                      - generic [ref=e930]: Disabled
+                      - img [ref=e931]
+                    - button "LinkedIn (OIDC) auth icon LinkedIn (OIDC) Disabled" [ref=e933] [cursor=pointer]:
+                      - img "LinkedIn (OIDC) auth icon" [ref=e935]
+                      - generic [ref=e936]: LinkedIn (OIDC)
+                      - generic [ref=e938]: Disabled
+                      - img [ref=e939]
+                    - button "Notion auth icon Notion Disabled" [ref=e941] [cursor=pointer]:
+                      - img "Notion auth icon" [ref=e943]
+                      - generic [ref=e944]: Notion
+                      - generic [ref=e946]: Disabled
+                      - img [ref=e947]
+                    - button "Twitch auth icon Twitch Disabled" [ref=e949] [cursor=pointer]:
+                      - img "Twitch auth icon" [ref=e951]
+                      - generic [ref=e952]: Twitch
+                      - generic [ref=e954]: Disabled
+                      - img [ref=e955]
+                    - button "X / Twitter (OAuth 2.0) auth icon X / Twitter (OAuth 2.0) Disabled" [ref=e957] [cursor=pointer]:
+                      - img "X / Twitter (OAuth 2.0) auth icon" [ref=e959]
+                      - generic [ref=e960]: X / Twitter (OAuth 2.0)
+                      - generic [ref=e962]: Disabled
+                      - img [ref=e963]
+                    - button "Twitter (Deprecated) auth icon Twitter (Deprecated) Disabled" [ref=e965] [cursor=pointer]:
+                      - img "Twitter (Deprecated) auth icon" [ref=e967]
+                      - generic [ref=e968]: Twitter (Deprecated)
+                      - generic [ref=e970]: Disabled
+                      - img [ref=e971]
+                    - button "Slack (OIDC) auth icon Slack (OIDC) Disabled" [ref=e973] [cursor=pointer]:
+                      - img "Slack (OIDC) auth icon" [ref=e975]
+                      - generic [ref=e976]: Slack (OIDC)
+                      - generic [ref=e978]: Disabled
+                      - img [ref=e979]
+                    - button "Slack (Deprecated) auth icon Slack (Deprecated) Disabled" [ref=e981] [cursor=pointer]:
+                      - img "Slack (Deprecated) auth icon" [ref=e983]
+                      - generic [ref=e984]: Slack (Deprecated)
+                      - generic [ref=e986]: Disabled
+                      - img [ref=e987]
+                    - button "Spotify auth icon Spotify Disabled" [ref=e989] [cursor=pointer]:
+                      - img "Spotify auth icon" [ref=e991]
+                      - generic [ref=e992]: Spotify
+                      - generic [ref=e994]: Disabled
+                      - img [ref=e995]
+                    - button "WorkOS auth icon WorkOS Disabled" [ref=e997] [cursor=pointer]:
+                      - img "WorkOS auth icon" [ref=e999]
+                      - generic [ref=e1000]: WorkOS
+                      - generic [ref=e1002]: Disabled
+                      - img [ref=e1003]
+                    - button "Zoom auth icon Zoom Disabled" [ref=e1005] [cursor=pointer]:
+                      - img "Zoom auth icon" [ref=e1007]
+                      - generic [ref=e1008]: Zoom
+                      - generic [ref=e1010]: Disabled
+                      - img [ref=e1011]
+                - generic [ref=e1013]:
+                  - generic [ref=e1015]:
+                    - generic [ref=e1016]:
+                      - generic [ref=e1017]:
+                        - heading "Custom Providers" [level=2] [ref=e1018]
+                        - generic [ref=e1019]: New
+                      - generic [ref=e1020]: Configure OAuth/OIDC providers for this project using your own issuer or endpoints.
+                    - link "Docs" [ref=e1022] [cursor=pointer]:
+                      - /url: https://supabase.com/docs/guides/auth/custom-oauth-providers
+                      - img [ref=e1024]
+                      - generic [ref=e1027]: Docs
+                  - generic [ref=e1029]:
+                    - generic [ref=e1030]:
+                      - generic [ref=e1031]:
+                        - group [ref=e1032]:
+                          - textbox "Search custom providers" [ref=e1033]
+                          - group [ref=e1034]:
+                            - img [ref=e1035]
+                        - generic [ref=e1038] [cursor=pointer]:
+                          - generic [ref=e1039]: Provider Type
+                          - img [ref=e1041]
+                        - generic [ref=e1043] [cursor=pointer]:
+                          - generic [ref=e1044]: Status
+                          - img [ref=e1046]
+                      - button "New Provider" [ref=e1049] [cursor=pointer]:
+                        - img [ref=e1051]
+                        - generic [ref=e1052]: New Provider
+                    - table [ref=e1057]:
+                      - rowgroup [ref=e1058]:
+                        - row "Name Identifier Type Enabled" [ref=e1059]:
+                          - columnheader "Name" [ref=e1060]:
+                            - button "Name" [ref=e1061] [cursor=pointer]:
+                              - text: Name
+                              - generic [ref=e1062]:
+                                - img [ref=e1063]
+                                - img [ref=e1065]
+                                - img [ref=e1067]
+                          - columnheader "Identifier" [ref=e1070]:
+                            - button "Identifier" [ref=e1071] [cursor=pointer]:
+                              - text: Identifier
+                              - generic [ref=e1072]:
+                                - img [ref=e1073]
+                                - img [ref=e1075]
+                                - img [ref=e1077]
+                          - columnheader "Type" [ref=e1080]:
+                            - button "Type" [ref=e1081] [cursor=pointer]:
+                              - text: Type
+                              - generic [ref=e1082]:
+                                - img [ref=e1083]
+                                - img [ref=e1085]
+                                - img [ref=e1087]
+                          - columnheader "Enabled" [ref=e1090]
+                          - columnheader [ref=e1091]
+                      - rowgroup [ref=e1093]:
+                        - row "No custom providers found" [ref=e1094]:
+                          - cell "No custom providers found" [ref=e1095]:
+                            - paragraph [ref=e1096]: No custom providers found
+    - generic [ref=e1100]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=e1101]:
+        - button "Close banner" [ref=e1103] [cursor=pointer]:
+          - img [ref=e1105]
+        - generic [ref=e1108]:
+          - generic [ref=e1109]:
+            - generic [ref=e1110]: Beta
+            - generic [ref=e1112]:
+              - generic [ref=e1148]:
+                - generic [ref=e1150]: 25 Jun 26 14:08:04
+                - generic [ref=e1151]: "201"
+              - generic [ref=e1153]:
+                - generic [ref=e1155]: 25 Jun 26 14:08:01
+                - generic [ref=e1156]: "200"
+              - generic [ref=e1158]:
+                - generic [ref=e1160]: 25 Jun 26 14:07:58
+                - generic [ref=e1161]: "200"
+              - generic [ref=e1163]:
+                - generic [ref=e1165]: 25 Jun 26 14:07:55
+                - generic [ref=e1166]: "500"
+          - generic [ref=e1133]:
+            - paragraph [ref=e1134]: Unified Logs is here
+            - paragraph [ref=e1135]: Search and correlate logs across all of your services from a single place.
+          - button "Enable Unified Logs" [ref=e1137] [cursor=pointer]:
+            - generic [ref=e1138]: Enable Unified Logs
+  - alert [ref=e401]: Sign In / Providers | Authentication | Supabase

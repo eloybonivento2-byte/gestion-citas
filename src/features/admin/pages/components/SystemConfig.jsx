@@ -53,7 +53,15 @@ export function SystemConfig() {
     return {};
   }, [config]);
 
-  const getValue = (key) => edits[key] ?? localConfig[key] ?? "";
+  const getValue = (key) => {
+    const raw = edits[key] ?? localConfig[key] ?? "";
+    return String(raw);
+  };
+
+  const isToggleOn = (key) => {
+    const raw = edits[key] ?? localConfig[key] ?? "";
+    return raw === true || raw === "true";
+  };
 
   const handleChange = (key, value) => {
     setEdits((prev) => ({ ...prev, [key]: value }));
@@ -61,7 +69,10 @@ export function SystemConfig() {
 
   const handleSave = async (key) => {
     setSaving(key);
-    await updateConfig(key, edits[key] ?? localConfig[key]);
+    const rawValue = edits[key] ?? localConfig[key];
+    const configItem = DEFAULT_CONFIG.find((c) => c.key === key);
+    const valueToSend = configItem?.type === "number" ? Number(rawValue) : rawValue;
+    await updateConfig(key, valueToSend);
     setEdits((prev) => {
       const next = { ...prev };
       delete next[key];
@@ -74,7 +85,10 @@ export function SystemConfig() {
     setSaving("all");
     const keysToSave = Object.keys(edits);
     for (const key of keysToSave) {
-      await updateConfig(key, edits[key]);
+      const rawValue = edits[key];
+      const configItem = DEFAULT_CONFIG.find((c) => c.key === key);
+      const valueToSend = configItem?.type === "number" ? Number(rawValue) : rawValue;
+      await updateConfig(key, valueToSend);
     }
     setEdits({});
     setSaving(null);
@@ -118,15 +132,15 @@ export function SystemConfig() {
                   <div className="config-controls">
                     {item.type === "toggle" ? (
                       <button
-                        className={`status-toggle ${getValue(item.key) === "true" ? "active" : "inactive"}`}
+                        className={`status-toggle ${isToggleOn(item.key) ? "active" : "inactive"}`}
                         onClick={() =>
                           handleChange(
                             item.key,
-                            getValue(item.key) === "true" ? "false" : "true",
+                            isToggleOn(item.key) ? "false" : "true",
                           )
                         }
                       >
-                        {getValue(item.key) === "true" ? "Activo" : "Inactivo"}
+                        {isToggleOn(item.key) ? "Activo" : "Inactivo"}
                       </button>
                     ) : (
                       <input

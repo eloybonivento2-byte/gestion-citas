@@ -1,0 +1,24 @@
+- generic [ref=e2]:
+  - navigation [ref=e42]:
+    - generic [ref=e43]:
+      - img [ref=e44]
+      - generic [ref=e46]: SENA Bienestar
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: Maria Garcia Aprendiz
+        - generic [ref=e50]: Aprendiz
+      - link "Mi perfil" [ref=e51] [cursor=pointer]:
+        - /url: /profile
+        - img [ref=e52]
+      - button "Cerrar sesión" [ref=e55] [cursor=pointer]:
+        - img [ref=e56]
+  - generic [ref=e59]:
+    - banner [ref=e60]:
+      - heading "Mis Citas de Bienestar" [level=1] [ref=e61]
+      - button "Nueva Cita" [ref=e62] [cursor=pointer]:
+        - img [ref=e63]
+        - text: Nueva Cita
+    - generic [ref=e65]:
+      - paragraph [ref=e66]: No tienes citas agendadas
+      - button "Agenda tu primera cita aquí" [ref=e67] [cursor=pointer]
+  - region "Notifications alt+T"

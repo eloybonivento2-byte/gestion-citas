@@ -69,7 +69,7 @@ export class DashboardRepository {
       .select(
         `
         professional_id,
-        professional:profiles!professional_id (full_name),
+        professional:profiles!appointments_professional_id_fkey (full_name),
         status,
         scheduled_date
       `,
@@ -112,8 +112,8 @@ export class DashboardRepository {
         `
         *,
         dependencies (name),
-        aprendiz:profiles!user_id (full_name, document_number),
-        professional:profiles!professional_id (full_name)
+        aprendiz:profiles!appointments_user_id_fkey (full_name, document_number),
+        professional:profiles!appointments_professional_id_fkey (full_name)
       `,
       )
       .gte("scheduled_date", dateRange.from)

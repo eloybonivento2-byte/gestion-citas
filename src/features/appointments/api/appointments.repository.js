@@ -24,15 +24,15 @@ export class AppointmentRepository {
     let query = supabase.from("appointments").select(`
         *,
         dependencies (name, color),
-        user:profiles!user_id (full_name, document_number),
-        professional:profiles!professional_id (full_name)
+        user:profiles!appointments_user_id_fkey (full_name, document_number),
+        professional:profiles!appointments_professional_id_fkey (full_name)
       `);
 
     if (userId) query = query.eq("user_id", userId);
     if (dependencyId) query = query.eq("dependency_id", dependencyId);
     if (status) query = query.eq("status", status);
     if (dateFrom) query = query.gte("scheduled_date", dateFrom);
-    if (dateTo) query = query.lte("scheduled_date", dateTo);
+    if (dateTo) query = query.lte("scheduled_date", dateTo + " 23:59:59");
 
     query = query
       .order("scheduled_date", { ascending: true })
@@ -94,8 +94,8 @@ export class AppointmentRepository {
       .select(`
         *,
         dependencies (name, color),
-        user:profiles!user_id (full_name, document_number),
-        professional:profiles!professional_id (full_name)
+        user:profiles!appointments_user_id_fkey (full_name, document_number),
+        professional:profiles!appointments_professional_id_fkey (full_name)
       `)
       .single();
 
@@ -114,5 +114,53 @@ export class AppointmentRepository {
 
     if (error) throw error;
     return data || [];
+  }
+
+  // RESCHEDULE: Reprogramar una cita (cambiar fecha y hora)
+  static async reschedule(appointmentId, newDate, newTime) {
+    const { data, error } = await supabase
+      .from("appointments")
+      .update({
+        scheduled_date: newDate,
+        scheduled_time: newTime,
+        status: "pending",
+        professional_id: null,
+        notes: null,
+        updated_at: new Date(),
+      })
+      .eq("id", appointmentId)
+      .select(
+        `*,
+        dependencies (name, color),
+        user:profiles!appointments_user_id_fkey (full_name, document_number),
+        professional:profiles!appointments_professional_id_fkey (full_name)
+      `
+      )
+      .single();
+
+    if (error) throw new Error(`Error reprogramando cita: ${error.message}`);
+    return data;
+  }
+
+  // EDIT: Editar datos básicos de una cita (motivo, notas)
+  static async edit(appointmentId, updates) {
+    const { data, error } = await supabase
+      .from("appointments")
+      .update({
+        ...updates,
+        updated_at: new Date(),
+      })
+      .eq("id", appointmentId)
+      .select(
+        `*,
+        dependencies (name, color),
+        user:profiles!appointments_user_id_fkey (full_name, document_number),
+        professional:profiles!appointments_professional_id_fkey (full_name)
+      `
+      )
+      .single();
+
+    if (error) throw new Error(`Error actualizando cita: ${error.message}`);
+    return data;
   }
 }

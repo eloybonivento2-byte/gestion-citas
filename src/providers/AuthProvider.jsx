@@ -81,14 +81,31 @@ export function AuthProvider({ children }) {
         email,
         password,
       });
-      if (error) throw error;
+      if (error) {
+        console.error("Supabase login error:", error.message, error.status);
+        
+        if (
+          error.status === 400 &&
+          (error.name === 'AuthInvalidCredentialsError' ||
+           error.name === 'AuthInvalidJwtError' ||
+           error.name === 'AuthSessionMissingError')
+        ) {
+          const msg = error.message || "Credenciales inválidas";
+          setError(msg);
+          return { success: false, error: msg };
+        }
+        
+        throw error;
+      }
 
       setUser(data.user);
       await fetchProfile(data.user.id);
       return { success: true, data };
     } catch (err) {
-      setError(err.message);
-      return { success: false, error: err.message };
+      console.error("Login catch error:", err);
+      const msg = err.message || "Error al iniciar sesión";
+      setError(msg);
+      return { success: false, error: msg };
     }
   };
 

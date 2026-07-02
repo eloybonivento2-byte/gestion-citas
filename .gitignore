@@ -9,17 +9,80 @@ lerna-debug.log*
 
 node_modules
 dist
-.env
 dist-ssr
 *.local
+*.log
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# System files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Development
+.debug
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Distribution
+build
+*.egg
+*.egg-info
+*.eggs
+
+# Editor backups
+*~
+*.bak
+*.orig
+
+# IDE
+*.iml
+.project
+.classpath
+.settings
+
+# IDE temp files
+*.hashmap
+*.debug
+
+# Default ignored files
+/appveyor.yml
+/.dockerignore
+/.dockerignore.template
+/.github/
+/.gitlab-ci.yml
+/.gitignore
+/.gitignore_global
+/.gitignore_parser
+/.mercury/project.yml
+/.mergify.yml
+/.mergify.yml.example
+/.opensource.yml
+/.readthedocs.yml
+/.readthedocs.yml.example
+/.thoughts.yml
+/.tower.yml
+/.vscode
+/.vscode/petite-vue.snippets.override.json
+/.webassets-cache.json
+/.webpack
+/test-results/
+*.png
+*.jpg
+*.jpeg
+*.ico
+*.gif
+*.woff
+*.woff2
+*.ttf
+*.eot

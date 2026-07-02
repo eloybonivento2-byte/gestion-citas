@@ -1,0 +1,28 @@
+- generic [ref=e2]:
+  - generic [ref=e35]:
+    - heading "Crear cuenta" [level=1] [ref=e36]
+    - paragraph [ref=e37]: SENA Bienestar — Agenda tus citas de bienestar
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - generic [ref=e40]: Nombre completo
+        - textbox "Nombre completo" [ref=e41]
+      - generic [ref=e42]:
+        - generic [ref=e43]: Número de documento
+        - textbox "Número de documento" [ref=e44]:
+          - /placeholder: "Ej: 1234567890"
+      - generic [ref=e45]:
+        - generic [ref=e46]: Email institucional
+        - textbox "Email institucional" [ref=e47]:
+          - /placeholder: tu.email@soy.sena.edu.co
+      - generic [ref=e48]:
+        - generic [ref=e49]: Contraseña
+        - textbox "Contraseña" [ref=e50]
+      - generic [ref=e51]:
+        - generic [ref=e52]: Confirmar contraseña
+        - textbox "Confirmar contraseña" [ref=e53]
+      - button "Crear cuenta" [ref=e54] [cursor=pointer]
+    - paragraph [ref=e55]:
+      - text: ¿Ya tienes cuenta?
+      - link "Inicia sesión aquí" [ref=e56] [cursor=pointer]:
+        - /url: /login
+  - region "Notifications alt+T"

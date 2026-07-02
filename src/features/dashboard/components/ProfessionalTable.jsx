@@ -1,4 +1,15 @@
 export function ProfessionalTable({ data }) {
+  if (!data || data.length === 0) {
+    return (
+      <div className="table-container">
+        <h3>Top profesionales</h3>
+        <p style={{ textAlign: "center", color: "#9ca3af", padding: "2rem" }}>
+          No hay datos de profesionales en el periodo seleccionado
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="table-container">
       <h3>Top profesionales</h3>

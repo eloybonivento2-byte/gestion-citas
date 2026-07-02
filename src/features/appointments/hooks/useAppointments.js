@@ -37,8 +37,9 @@ export function useAppointments() {
         setAppointments(data);
         return data;
       } catch (err) {
+        console.error("Error fetching appointments:", err);
         setError(err.message);
-        toast.error("Error cargando citas");
+        toast.error(`Error cargando citas: ${err.message}`);
         return [];
       } finally {
         setStatus(STATUS.IDLE);
@@ -87,6 +88,67 @@ export function useAppointments() {
     } catch (err) {
       setError(err.message);
       toast.error(err.message);
+      return { success: false, error: err.message };
+    } finally {
+      setStatus(STATUS.IDLE);
+    }
+  };
+
+  // RESCHEDULE: Reprogramar una cita con validación de disponibilidad
+  const rescheduleAppointment = async (appointmentId, newDate, newTime) => {
+    setStatus(STATUS.UPDATING);
+    
+    try {
+      // Verificar disponibilidad para el nuevo horario (excluyendo la cita actual)
+      const isAvailable = await AppointmentRepository.checkAvailability(
+        appointmentId,
+        newDate,
+        newTime,
+      );
+      
+      if (!isAvailable) {
+        throw new Error("Este horario ya está ocupado. Selecciona otro.");
+      }
+      
+      const updated = await AppointmentRepository.reschedule(
+        appointmentId,
+        newDate,
+        newTime,
+      );
+      
+      // Actualizar estado local sin recargar todo
+      setAppointments((prev) =>
+        prev.map((app) => (app.id === appointmentId ? updated : app)),
+      );
+      
+      toast.success("Cita reprogramada exitosamente");
+      return { success: true };
+    } catch (err) {
+      setError(err.message);
+      toast.error("Error reprogramando cita");
+      return { success: false, error: err.message };
+    } finally {
+      setStatus(STATUS.IDLE);
+    }
+  };
+
+  // EDIT: Editar datos básicos de una cita (sin cambiar fecha/hora)
+  const editAppointment = async (appointmentId, updates) => {
+    setStatus(STATUS.UPDATING);
+    
+    try {
+      const updated = await AppointmentRepository.edit(appointmentId, updates);
+      
+      // Actualizar estado local sin recargar todo
+      setAppointments((prev) =>
+        prev.map((app) => (app.id === appointmentId ? updated : app)),
+      );
+      
+      toast.success("Cita actualizada exitosamente");
+      return { success: true };
+    } catch (err) {
+      setError(err.message);
+      toast.error("Error actualizando cita");
       return { success: false, error: err.message };
     } finally {
       setStatus(STATUS.IDLE);
@@ -173,6 +235,63 @@ export function useAppointments() {
     }
   };
 
+  // REPROGRAMAR: Reprogramar una cita (cambiar fecha/hora)
+  const rescheduleAppointment = async (appointmentId, newDate, newTime) => {
+    setStatus(STATUS.UPDATING);
+    
+    try {
+      // Verificar disponibilidad para el nuevo horario
+      const isAvailable = await AppointmentRepository.checkAvailability(
+        appointmentId, 
+        newDate, 
+        newTime
+      );
+      
+      if (!isAvailable) {
+        throw new Error("Este horario ya está ocupado. Selecciona otro.");
+      }
+      
+      const updated = await AppointmentRepository.reschedule(
+        appointmentId,
+        newDate,
+        newTime,
+      );
+      
+      setAppointments((prev) =>
+        prev.map((app) => (app.id === appointmentId ? updated : app)),
+      );
+      
+      toast.success("Cita reprogramada exitosamente");
+      return { success: true };
+    } catch (err) {
+      toast.error("Error reprogramando cita");
+      return { success: false, error: err.message };
+    } finally {
+      setStatus(STATUS.IDLE);
+    }
+  };
+
+  // EDIT: Editar datos básicos de una cita (sin cambiar fecha/hora)
+  const editAppointment = async (appointmentId, updates) => {
+    setStatus(STATUS.UPDATING);
+    
+    try {
+      const updated = await AppointmentRepository.edit(appointmentId, updates);
+      
+      setAppointments((prev) =>
+        prev.map((app) => (app.id === appointmentId ? updated : app)),
+      );
+      
+      toast.success("Cita actualizada exitosamente");
+      return { success: true };
+    } catch (err) {
+      toast.error("Error actualizando cita");
+      return { success: false, error: err.message };
+    } finally {
+      setStatus(STATUS.IDLE);
+    }
+  };
+
   // GET PROFESSIONALS: Obtener profesionales de una dependencia
   const getProfessionals = async (dependencyId) => {
     try {
@@ -194,6 +313,8 @@ export function useAppointments() {
     updateStatus,
     cancelAppointment,
     assignProfessional,
+    rescheduleAppointment,
+    editAppointment,
     getProfessionals,
   };
 }

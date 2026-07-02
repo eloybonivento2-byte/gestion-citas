@@ -1,0 +1,350 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e96]:
+      - banner [ref=e98]:
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - link "Supabase" [ref=e101] [cursor=pointer]:
+              - /url: /dashboard/org/aejshpuehznkayjsfxmf
+              - img "Supabase" [ref=e102]
+            - generic [ref=e103]:
+              - img [ref=e105]
+              - generic [ref=e107]:
+                - link "Bienestar Free" [ref=e108] [cursor=pointer]:
+                  - /url: /dashboard/org/aejshpuehznkayjsfxmf
+                  - img [ref=e109]
+                  - generic [ref=e119]: Bienestar
+                  - generic [ref=e120]: Free
+                - button [ref=e121] [cursor=pointer]:
+                  - img [ref=e123]
+              - generic [ref=e126]:
+                - img [ref=e128]
+                - generic [ref=e130]:
+                  - link "gestion-citas" [ref=e131] [cursor=pointer]:
+                    - /url: /dashboard/project/zisushntyziyinvkfmgy
+                    - img [ref=e132]
+                    - generic "gestion-citas" [ref=e135]
+                  - button [ref=e136] [cursor=pointer]:
+                    - img [ref=e138]
+                - img [ref=e142]
+                - generic [ref=e144]:
+                  - link "main Production" [ref=e145] [cursor=pointer]:
+                    - /url: /dashboard/project/zisushntyziyinvkfmgy
+                    - generic "main" [ref=e146]
+                    - generic [ref=e147]: Production
+                  - button [ref=e148] [cursor=pointer]:
+                    - img [ref=e150]
+            - button "Connect" [ref=e154] [cursor=pointer]:
+              - img [ref=e156]
+              - generic [ref=e158]: Connect
+          - generic [ref=e159]:
+            - generic [ref=e161] [cursor=pointer]: Feedback
+            - generic [ref=e162]:
+              - button "Search..." [ref=e163]:
+                - generic [ref=e164]:
+                  - img [ref=e165]
+                  - paragraph [ref=e168]: Search...
+                - generic [ref=e170]: Ctrl K
+              - button "Help" [ref=e171] [cursor=pointer]:
+                - generic [ref=e172]:
+                  - img [ref=e173]
+                  - generic [ref=e176]: Help
+              - button "Advisor Center" [ref=e178] [cursor=pointer]:
+                - generic [ref=e179]:
+                  - img [ref=e180]
+                  - generic [ref=e182]: Advisor Center
+              - button "SQL Editor" [ref=e183] [cursor=pointer]:
+                - generic [ref=e184]:
+                  - img [ref=e185]
+                  - generic [ref=e187]: SQL Editor
+              - button "AI Assistant" [ref=e188] [cursor=pointer]:
+                - generic [ref=e189]:
+                  - img [ref=e192]
+                  - generic [ref=e195]: AI Assistant
+            - button [ref=e196] [cursor=pointer]:
+              - figure [ref=e198]:
+                - img [ref=e199]
+      - generic [ref=e201]:
+        - generic [ref=e205]:
+          - list [ref=e208]:
+            - generic [ref=e209]:
+              - listitem [ref=e210]:
+                - link "Project Overview" [ref=e211] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy
+                  - img [ref=e212]
+                  - generic: Project Overview
+              - listitem [ref=e214]:
+                - link "Table Editor" [ref=e215] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/editor
+                  - img [ref=e216]
+                  - generic: Table Editor
+              - listitem [ref=e218]:
+                - link "SQL Editor" [ref=e219] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/sql
+                  - img [ref=e220]
+                  - generic: SQL Editor
+            - generic [ref=e222]:
+              - listitem [ref=e223]:
+                - link "Database" [ref=e224] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/database/schemas
+                  - img [ref=e225]
+                  - generic: Database
+              - listitem [ref=e229]:
+                - link "Authentication" [ref=e230] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/auth/users
+                  - img [ref=e231]
+                  - generic: Authentication
+              - listitem [ref=e233]:
+                - link "Storage" [ref=e234] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/storage/files
+                  - img [ref=e235]
+                  - generic: Storage
+              - listitem [ref=e237]:
+                - link "Edge Functions" [ref=e238] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/functions
+                  - img [ref=e239]
+                  - generic: Edge Functions
+              - listitem [ref=e244]:
+                - link "Realtime" [ref=e245] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/realtime/inspector
+                  - img [ref=e246]
+                  - generic: Realtime
+            - generic [ref=e248]:
+              - listitem [ref=e250]:
+                - link "Advisors" [ref=e251] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/advisors/security
+                  - img [ref=e252]
+                  - generic: Advisors
+              - listitem [ref=e254]:
+                - link "Observability" [ref=e255] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/observability
+                  - img [ref=e256]
+                  - generic: Observability
+              - listitem [ref=e264]:
+                - link "Logs" [ref=e265] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/logs/explorer
+                  - img [ref=e266]
+                  - generic: Logs
+              - listitem [ref=e267]:
+                - link "Integrations" [ref=e268] [cursor=pointer]:
+                  - /url: /dashboard/project/zisushntyziyinvkfmgy/integrations
+                  - img [ref=e269]
+                  - generic: Integrations
+            - listitem [ref=e273]:
+              - link "Project Settings" [ref=e274] [cursor=pointer]:
+                - /url: /dashboard/project/zisushntyziyinvkfmgy/settings/general
+                - img [ref=e275]
+                - generic: Project Settings
+          - button "Sidebar control" [ref=e280] [cursor=pointer]:
+            - img [ref=e282]
+        - generic [ref=e289]:
+          - generic [ref=e293]:
+            - heading "SQL Editor" [level=4] [ref=e295]
+            - generic [ref=e297]:
+              - generic [ref=e298]:
+                - generic [ref=e299]:
+                  - generic [ref=e301]:
+                    - generic [ref=e302]: Search queries
+                    - textbox "Search queries..." [ref=e303]
+                    - button [ref=e304]:
+                      - img [ref=e305]
+                    - img [ref=e308]
+                  - button [ref=e311] [cursor=pointer]:
+                    - img [ref=e313]
+                - button "Shared" [ref=e316]:
+                  - img [ref=e317]
+                  - generic [ref=e319]: Shared
+                - button "Favorites" [ref=e322]:
+                  - img [ref=e323]
+                  - generic [ref=e325]: Favorites
+                - generic [ref=e327]:
+                  - button "PRIVATE (9)" [expanded] [ref=e620]:
+                    - img [ref=e329]
+                    - generic [ref=e331]: PRIVATE (9)
+                  - tree "private-snippets" [ref=e333]:
+                    - generic "Untitled query" [ref=e621] [cursor=pointer]:
+                      - generic [ref=e622]:
+                        - img [ref=e623]
+                        - generic [ref=e629]: Untitled query
+                    - generic "Untitled query" [ref=e334] [cursor=pointer]:
+                      - generic [ref=e335]:
+                        - img [ref=e336]
+                        - generic [ref=e342]: Untitled query
+                    - generic "Untitled query" [ref=e343] [cursor=pointer]:
+                      - generic [ref=e344]:
+                        - img [ref=e345]
+                        - generic [ref=e351]: Untitled query
+                    - generic "Roles and Permissions Table" [ref=e352] [cursor=pointer]:
+                      - generic [ref=e353]:
+                        - img [ref=e354]
+                        - generic [ref=e360]: Roles and Permissions Table
+                    - generic "Roles and Permissions Table" [ref=e361] [cursor=pointer]:
+                      - generic [ref=e362]:
+                        - img [ref=e363]
+                        - generic [ref=e369]: Roles and Permissions Table
+                    - generic "Auditoría y configuración del sistema con RLS" [ref=e370] [cursor=pointer]:
+                      - generic [ref=e371]:
+                        - img [ref=e372]
+                        - generic [ref=e378]: Auditoría y configuración del sistema con RLS
+                    - generic "Dashboard KPIs and Monthly Appointment Trends" [ref=e379] [cursor=pointer]:
+                      - generic [ref=e380]:
+                        - img [ref=e381]
+                        - generic [ref=e387]: Dashboard KPIs and Monthly Appointment Trends
+                    - generic "Role-Based Profile View Policy" [ref=e388] [cursor=pointer]:
+                      - generic [ref=e389]:
+                        - img [ref=e390]
+                        - generic [ref=e396]: Role-Based Profile View Policy
+                    - generic "Esquema de Bienestar SENA con RLS y flujos de perfiles/turnos" [ref=e397] [cursor=pointer]:
+                      - generic [ref=e398]:
+                        - img [ref=e399]
+                        - generic [ref=e405]: Esquema de Bienestar SENA con RLS y flujos de perfiles/turnos
+                - generic [ref=e407]:
+                  - button "Reference" [expanded] [ref=e408]:
+                    - img [ref=e409]
+                    - generic [ref=e411]: Reference
+                  - generic [ref=e412]:
+                    - link "templates" [ref=e413] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/sql/templates
+                      - img [ref=e414]
+                      - text: templates
+                    - link "examples" [ref=e416] [cursor=pointer]:
+                      - /url: /dashboard/project/zisushntyziyinvkfmgy/sql/examples
+                      - img [ref=e417]
+                      - text: examples
+              - button "View running queries" [ref=e421] [cursor=pointer]:
+                - generic [ref=e422]: View running queries
+          - separator [ref=e423]:
+            - img [ref=e425]
+          - main [ref=e434]:
+            - generic [ref=e435]:
+              - generic [ref=e436]:
+                - generic [ref=e437]:
+                  - button "Collapse sidebar" [ref=e438]:
+                    - img [ref=e439]
+                    - generic [ref=e442]: Collapse sidebar
+                  - tablist [ref=e443]:
+                    - button "Untitled query" [ref=e631]:
+                      - tab "Untitled query" [selected] [ref=e632]:
+                        - img [ref=e633]
+                        - generic [ref=e640]: Untitled query
+                        - button [ref=e641] [cursor=pointer]:
+                          - img [ref=e642]
+                      - separator [ref=e646]
+                    - button [ref=e647]:
+                      - img [ref=e648]
+                - status [ref=e454]
+              - generic [ref=e457]:
+                - code [ref=e464]:
+                  - generic [ref=e465]:
+                    - generic [ref=e467]:
+                      - generic [ref=e573]: "1"
+                      - generic [ref=e575]: "2"
+                      - generic [ref=e577]: "3"
+                      - generic [ref=e579]: "4"
+                      - generic [ref=e582]: "5"
+                    - generic [ref=e475]:
+                      - generic [ref=e590]: "-- Confirmar todos los usuarios existentes"
+                      - generic [ref=e650]: UPDATE auth.users SET email_confirmed_at = NOW() WHERE email_confirmed_at IS NULL;
+                      - generic [ref=e652]: "-- Verificar usuarios"
+                      - generic [ref=e654]: SELECT id, email, email_confirmed_at FROM auth.users;
+                    - textbox "Editor content" [active] [ref=e479]: "-- Confirmar todos los usuarios existentes UPDATE auth.users SET email_confirmed_at = NOW() WHERE email_confirmed_at IS NULL; -- Verificar usuarios SELECT id, email, email_confirmed_at FROM auth.users;"
+                - separator [ref=e480]:
+                  - img [ref=e482]
+                - generic [ref=e491]:
+                  - tablist [ref=e492]:
+                    - generic [ref=e493]:
+                      - tab "Results" [selected] [ref=e494]:
+                        - generic [ref=e495]: Results
+                      - tab "Chart" [ref=e496]:
+                        - generic [ref=e497]: Chart
+                      - button "Export" [ref=e655] [cursor=pointer]:
+                        - generic [ref=e656]: Export
+                        - img [ref=e658]
+                    - generic [ref=e498]:
+                      - button [ref=e499] [cursor=pointer]:
+                        - img [ref=e501]
+                      - generic [ref=e506]:
+                        - generic [ref=e507] [cursor=pointer]:
+                          - generic [ref=e508]: Source
+                          - button "Primary database" [ref=e509]:
+                            - generic [ref=e510]: Primary database
+                            - img [ref=e512]
+                        - button "Role postgres" [ref=e514] [cursor=pointer]:
+                          - generic [ref=e516]:
+                            - generic [ref=e517]: Role
+                            - generic [ref=e518]: postgres
+                            - img [ref=e519]
+                        - button "Run Ctrl ↵" [ref=e521] [cursor=pointer]:
+                          - generic [ref=e522]: Run
+                          - generic [ref=e660]: Ctrl ↵
+                  - grid [ref=e661]:
+                    - row "id email email_confirmed_at" [ref=e662]:
+                      - columnheader "id" [ref=e663]:
+                        - generic [ref=e664]: id
+                      - columnheader "email" [ref=e666]:
+                        - generic [ref=e667]: email
+                      - columnheader "email_confirmed_at" [ref=e669]:
+                        - generic [ref=e670]: email_confirmed_at
+                    - row "a1bbb6de-d2ed-4d78-bcd4-8dea30b620b2 eloybonivento@gmail.com 2026-06-19 17:03:17.280201+00" [ref=e672]:
+                      - gridcell "a1bbb6de-d2ed-4d78-bcd4-8dea30b620b2" [ref=e673]:
+                        - generic [ref=e674]: a1bbb6de-d2ed-4d78-bcd4-8dea30b620b2
+                      - gridcell "eloybonivento@gmail.com" [ref=e675]:
+                        - generic [ref=e676]: eloybonivento@gmail.com
+                      - gridcell "2026-06-19 17:03:17.280201+00" [ref=e677]:
+                        - generic [ref=e678]: 2026-06-19 17:03:17.280201+00
+                    - row "412ec8f1-e28a-4d11-a752-fbcba6c07cd2 eloybonivento2@gmail.com 2026-05-04 18:10:06.734944+00" [ref=e679]:
+                      - gridcell "412ec8f1-e28a-4d11-a752-fbcba6c07cd2" [ref=e680]:
+                        - generic [ref=e681]: 412ec8f1-e28a-4d11-a752-fbcba6c07cd2
+                      - gridcell "eloybonivento2@gmail.com" [ref=e682]:
+                        - generic [ref=e683]: eloybonivento2@gmail.com
+                      - gridcell "2026-05-04 18:10:06.734944+00" [ref=e684]:
+                        - generic [ref=e685]: 2026-05-04 18:10:06.734944+00
+                    - row "279db649-93df-45c1-9bc9-4c5aaf9bd68d maria.test@soy.sena.edu.co 2026-06-25 19:11:10.61127+00" [ref=e686]:
+                      - gridcell "279db649-93df-45c1-9bc9-4c5aaf9bd68d" [ref=e687]:
+                        - generic [ref=e688]: 279db649-93df-45c1-9bc9-4c5aaf9bd68d
+                      - gridcell "maria.test@soy.sena.edu.co" [ref=e689]:
+                        - generic [ref=e690]: maria.test@soy.sena.edu.co
+                      - gridcell "2026-06-25 19:11:10.61127+00" [ref=e691]:
+                        - generic [ref=e692]: 2026-06-25 19:11:10.61127+00
+                    - row "dc8c0d43-29a3-460a-8298-41ade1ffff51 juan.test@soy.sena.edu.co 2026-06-25 19:18:01.517563+00" [ref=e693]:
+                      - gridcell "dc8c0d43-29a3-460a-8298-41ade1ffff51" [ref=e694]:
+                        - generic [ref=e695]: dc8c0d43-29a3-460a-8298-41ade1ffff51
+                      - gridcell "juan.test@soy.sena.edu.co" [ref=e696]:
+                        - generic [ref=e697]: juan.test@soy.sena.edu.co
+                      - gridcell "2026-06-25 19:18:01.517563+00" [ref=e698]:
+                        - generic [ref=e699]: 2026-06-25 19:18:01.517563+00
+                - generic "Table grid footer" [ref=e700]:
+                  - button "4 rows" [ref=e701]:
+                    - paragraph [ref=e702]:
+                      - generic [ref=e703]: 4 rows
+    - generic [ref=e532]:
+      - generic:
+        - img "Background pattern"
+      - generic [ref=e533]:
+        - button "Close banner" [ref=e535] [cursor=pointer]:
+          - img [ref=e537]
+        - generic [ref=e540]:
+          - generic [ref=e541]:
+            - generic [ref=e542]: Beta
+            - generic [ref=e544]:
+              - generic [ref=e725]:
+                - generic [ref=e727]: 25 Jun 26 14:18:26
+                - generic [ref=e728]: "200"
+              - generic [ref=e730]:
+                - generic [ref=e732]: 25 Jun 26 14:18:23
+                - generic [ref=e733]: "500"
+              - generic [ref=e735]:
+                - generic [ref=e737]: 25 Jun 26 14:18:20
+                - generic [ref=e738]: "200"
+              - generic [ref=e740]:
+                - generic [ref=e742]: 25 Jun 26 14:18:17
+                - generic [ref=e743]: "400"
+          - generic [ref=e565]:
+            - paragraph [ref=e566]: Unified Logs is here
+            - paragraph [ref=e567]: Search and correlate logs across all of your services from a single place.
+          - button "Enable Unified Logs" [ref=e569] [cursor=pointer]:
+            - generic [ref=e570]: Enable Unified Logs
+  - alert [ref=e95]: SQL Editor | gestion-citas | Bienestar | Supabase
+  - generic [ref=e571]:
+    - alert
+    - alert

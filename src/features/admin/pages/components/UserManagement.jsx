@@ -115,7 +115,7 @@ export function UserManagement() {
                                     {u.is_active ? 'Activo' : 'Inactivo'}
                                 </button>
                             </td>
-                            <td>{new Date(u.update_at).toLocaleDateString()}</td>
+                            <td>{new Date(u.updated_at).toLocaleDateString()}</td>
                             <td>
                                 <div style={{ display: 'flex', gap: '0.25rem' }}>
                                     <button

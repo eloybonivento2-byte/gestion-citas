@@ -1,0 +1,54 @@
+- generic [ref=e2]:
+  - navigation [ref=e42]:
+    - generic [ref=e43]:
+      - img [ref=e44]
+      - generic [ref=e46]: SENA Bienestar
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: Maria Garcia Aprendiz
+        - generic [ref=e50]: Aprendiz
+      - link "Mi perfil" [ref=e51] [cursor=pointer]:
+        - /url: /profile
+        - img [ref=e52]
+      - button "Cerrar sesión" [ref=e55] [cursor=pointer]:
+        - img [ref=e56]
+  - generic [ref=e59]:
+    - banner [ref=e60]:
+      - heading "Mis Citas de Bienestar" [level=1] [ref=e61]
+      - button "Nueva Cita" [active] [ref=e62] [cursor=pointer]:
+        - img [ref=e63]
+        - text: Nueva Cita
+    - generic [ref=e69]:
+      - heading "Solicitar Nueva Cita" [level=2] [ref=e70]
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: Dependencia
+          - combobox [ref=e74]:
+            - option "Selecciona una dependencia..."
+            - option "Psicología"
+            - option "Enfermería" [selected]
+            - option "Trabajo Social"
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - generic [ref=e77]: Fecha
+            - textbox [ref=e78]
+          - generic [ref=e79]:
+            - generic [ref=e80]: Hora
+            - combobox [ref=e81]:
+              - option "08:00" [selected]
+              - option "09:00"
+              - option "10:00"
+              - option "11:00"
+              - option "12:00"
+              - option "13:00"
+              - option "14:00"
+              - option "15:00"
+              - option "16:00"
+        - generic [ref=e82]:
+          - generic [ref=e83]: Motivo de consulta
+          - textbox "Describe brevemente por qué necesitas la cita (mínimo 10 caracteres)..." [ref=e84]
+        - button "Solicitar Cita" [ref=e85] [cursor=pointer]
+    - generic [ref=e65]:
+      - paragraph [ref=e66]: No tienes citas agendadas
+      - button "Agenda tu primera cita aquí" [ref=e67] [cursor=pointer]
+  - region "Notifications alt+T"

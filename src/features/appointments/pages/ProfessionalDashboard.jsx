@@ -4,6 +4,7 @@ import { AppointmentCard } from "../components/AppointmentCard";
 import { AssignProfessionalModal } from "../components/AssignProfessionalModal";
 import { useAuth } from "../../../providers/AuthProvider";
 import { Navbar } from "../../../shared/components/Navbar";
+import { UserCheck, Stethoscope, Clock, Calendar } from "lucide-react";
 
 export default function ProfessionalDashboard() {
   const {
@@ -16,6 +17,10 @@ export default function ProfessionalDashboard() {
   } = useAppointments();
   const { profile } = useAuth();
   const [filter, setFilter] = useState("pending");
+  const [showRescheduleForm, setShowRescheduleForm] = useState(false);
+  const [selectedAppointment, setSelectedAppointment] = useState(null);
+  const [rescheduleDate, setRescheduleDate] = useState("");
+  const [rescheduleTime, setRescheduleTime] = useState("08:00");
   const [showAssignModal, setShowAssignModal] = useState(false);
   const [selectedAppointment, setSelectedAppointment] = useState(null);
   const [professionals, setProfessionals] = useState([]);
@@ -40,9 +45,17 @@ export default function ProfessionalDashboard() {
       <Navbar />
       <div className="dashboard-container">
         <header className="dashboard-header">
-          <h1>Citas - {profile?.dependencies?.name}</h1>
+          <div className="header-content">
+            <div className="header-icon">
+              <UserCheck size={32} />
+            </div>
+            <div className="header-text">
+              <h1 className="main-title">Citas - {profile?.dependencies?.name}</h1>
+              <p className="subtitle">Gestiona y coordina las citas para tu dependencia de bienestar SENA</p>
+            </div>
+          </div>
           <div className="filter-tabs">
-            {["pending", "confirmed", "completed", "no_show"].map((status) => (
+            {["pending", "confirmed", "completed", "cancelled", "no_show"].map((status) => (
               <button
                 key={status}
                 className={filter === status ? "active" : ""}
@@ -51,6 +64,7 @@ export default function ProfessionalDashboard() {
                 {status === "pending" && "Pendientes"}
                 {status === "confirmed" && "Confirmadas"}
                 {status === "completed" && "Historial"}
+                {status === "cancelled" && "Canceladas"}
                 {status === "no_show" && "No asistió"}
               </button>
             ))}

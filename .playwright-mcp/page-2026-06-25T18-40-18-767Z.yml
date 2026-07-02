@@ -1,0 +1,24 @@
+- generic [ref=e2]:
+  - generic [ref=e58]:
+    - heading "Iniciar Sesión" [level=1] [ref=e59]
+    - paragraph [ref=e60]: SENA Bienestar — Acceso institucional
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - generic [ref=e63]: Email
+        - textbox "Email" [ref=e64]
+      - generic [ref=e65]:
+        - generic [ref=e66]: Contraseña
+        - textbox "Contraseña" [ref=e67]
+      - button "Entrar" [ref=e68] [cursor=pointer]
+    - paragraph [ref=e69]:
+      - link "¿Olvidaste tu contraseña?" [ref=e70] [cursor=pointer]:
+        - /url: /forgot-password
+    - paragraph [ref=e71]:
+      - text: ¿No tienes cuenta?
+      - link "Regístrate aquí" [ref=e72] [cursor=pointer]:
+        - /url: /register
+  - region "Notifications alt+T":
+    - list:
+      - listitem [ref=e73]:
+        - img [ref=e75]
+        - generic [ref=e78]: ¡Registro exitoso! Revisa tu email para confirmar la cuenta.

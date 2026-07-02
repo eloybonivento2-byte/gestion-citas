@@ -1,0 +1,104 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner "Global navigation menu" [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - button "Open menu" [ref=e12] [cursor=pointer]:
+            - img [ref=e13]
+          - link "Homepage (g then d)" [ref=e15] [cursor=pointer]:
+            - /url: /
+            - img [ref=e16]
+        - button "Search or jump to…" [ref=e21] [cursor=pointer]:
+          - generic [ref=e22]:
+            - generic:
+              - img
+            - generic [ref=e23]:
+              - generic:
+                - text: Type
+                - generic: /
+                - text: to search
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - generic [ref=e28]:
+              - link "Chat with Copilot" [ref=e30] [cursor=pointer]:
+                - /url: /copilot
+                - img [ref=e31]
+              - button "Open Copilot…" [ref=e35] [cursor=pointer]:
+                - generic:
+                  - img
+            - button "Create new..." [ref=e37] [cursor=pointer]:
+              - generic [ref=e38]:
+                - generic:
+                  - img
+              - generic:
+                - img
+            - generic [ref=e39]:
+              - link "All issues (g then i)" [ref=e40] [cursor=pointer]:
+                - /url: /issues
+                - img [ref=e41]
+              - link "All pull requests (g then p)" [ref=e44] [cursor=pointer]:
+                - /url: /pulls
+                - img [ref=e45]
+              - link "All repositories" [ref=e47] [cursor=pointer]:
+                - /url: /repos
+                - img [ref=e48]
+          - link "You have no unread notifications (g then n)" [ref=e50] [cursor=pointer]:
+            - /url: /notifications
+            - img [ref=e51]
+          - button "Open user navigation menu" [ref=e54] [cursor=pointer]:
+            - img "User avatar" [ref=e55]
+  - main [ref=e58]:
+    - img "404 “This is not the web page you are looking for”" [ref=e62]
+    - generic [ref=e63]:
+      - search [ref=e64]:
+        - generic [ref=e65]: "Find code, projects, and people on GitHub:"
+        - generic [ref=e66]:
+          - textbox "Find code, projects, and people on GitHub:" [ref=e67]
+          - button "Search" [ref=e68] [cursor=pointer]
+      - generic [ref=e69]:
+        - link "Contact Support" [ref=e70] [cursor=pointer]:
+          - /url: https://support.github.com?tags=dotcom-404
+        - text: —
+        - link "GitHub Status" [ref=e71] [cursor=pointer]:
+          - /url: https://githubstatus.com
+        - text: —
+        - link "@githubstatus" [ref=e72] [cursor=pointer]:
+          - /url: https://x.com/githubstatus
+  - contentinfo [ref=e73]:
+    - heading "Footer" [level=2] [ref=e74]
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - link "GitHub Homepage" [ref=e77] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e78]
+        - generic [ref=e80]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e81]:
+        - heading "Footer navigation" [level=3] [ref=e82]
+        - list "Footer navigation" [ref=e83]:
+          - listitem [ref=e84]:
+            - link "Terms" [ref=e85] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e86]:
+            - link "Privacy" [ref=e87] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e88]:
+            - link "Security" [ref=e89] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e90]:
+            - link "Status" [ref=e91] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e92]:
+            - link "Community" [ref=e93] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e94]:
+            - link "Docs" [ref=e95] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e96]:
+            - link "Contact" [ref=e97] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e98]:
+            - button "Manage cookies" [ref=e100] [cursor=pointer]
+          - listitem [ref=e101]:
+            - button "Do not share my personal information" [ref=e103] [cursor=pointer]

@@ -10,7 +10,7 @@ const ACTION_COLORS = {
 };
 
 export function AuditLogViewer() {
-    const { auditLogs, fetchAuditLogs} = useAdmin();
+    const { auditLogs, fetchAuditLogs, loading } = useAdmin();
     const [ filter, setFilter] = useState('');
 
     useEffect(() => {
@@ -33,7 +33,14 @@ export function AuditLogViewer() {
                 />
             </div>
             <div className="audit-timeline">
-                {filteredLogs.map(log => (
+                {loading ? (
+                    <p style={{ textAlign: "center", color: "#6b7280", padding: "2rem" }}>Cargando registros de auditoría...</p>
+                ) : filteredLogs.length === 0 ? (
+                    <p style={{ textAlign: "center", color: "#9ca3af", padding: "2rem" }}>
+                        No hay registros de auditoría{filter ? " que coincidan con el filtro" : ""}
+                    </p>
+                ) : (
+                    filteredLogs.map(log => (
                     <div key={log.id} className="audit-item">
                         <div className="audit-dot" style={{ color: ACTION_COLORS[log.action] || '#666'}} />
                         <div className="audit-content">
@@ -71,7 +78,8 @@ export function AuditLogViewer() {
                             </div>
                         </div>
                     </div>
-                ))}
+                ))
+                )}
             </div>
         </div>
     );

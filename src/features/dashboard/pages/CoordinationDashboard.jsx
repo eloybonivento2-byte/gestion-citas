@@ -58,10 +58,17 @@ export default function CoordinationDashboard() {
 
       <div className="date-filter">
         <Calendar size={18} />
+        <span style={{ fontSize: "0.875rem", color: "#6b7280" }}>Desde</span>
         <input 
           type="date"
           value={dateRange.from}
           onChange={(e) => handleDateChange("from", e.target.value)}
+        />
+        <span style={{ fontSize: "0.875rem", color: "#6b7280" }}>Hasta</span>
+        <input 
+          type="date"
+          value={dateRange.to}
+          onChange={(e) => handleDateChange("to", e.target.value)}
         />
       </div>
 
@@ -76,7 +83,7 @@ export default function CoordinationDashboard() {
 
           <KPICard 
             title="Tasa de Cumplimiento"
-            value={`${Math.round((kpis.completed_appointments / kpis.total_appoinments) * 100)}%`}
+            value={kpis.total_appoinments > 0 ? `${Math.round((kpis.completed_appointments / kpis.total_appoinments) * 100)}%` : "N/A"}
             color="#22c55e"
             subtitle={`${kpis.completed_appointments} completadas`}
           />
@@ -92,7 +99,7 @@ export default function CoordinationDashboard() {
             title="No Asistencias"
             value={kpis.no_show_count}
             color="#ef4444"
-            subtitle={`${Math.round((kpis.no_show_count / kpis.total_appoinments) * 100)}% del total`}
+            subtitle={kpis.total_appoinments > 0 ? `${Math.round((kpis.no_show_count / kpis.total_appoinments) * 100)}% del total` : "Sin datos"}
           />
         </section>
       )}

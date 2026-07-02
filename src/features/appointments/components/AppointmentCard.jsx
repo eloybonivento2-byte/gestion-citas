@@ -17,7 +17,7 @@ const STATUS_CONFIG = {
   no_show: { label: "No asistió", color: "#6b7280", icon: XCircle },
 };
 
-export function AppointmentCard({ appointment, onCancel, isAprendiz, onAssignProfessional }) {
+export function AppointmentCard({ appointment, onCancel, isAprendiz, onAssignProfessional, onReschedule, onEdit }) {
   const {
     dependencies,
     scheduled_date,
@@ -80,6 +80,11 @@ export function AppointmentCard({ appointment, onCancel, isAprendiz, onAssignPro
           <button onClick={onCancel} className="btn-danger">
             Cancelar Cita
           </button>
+          <button onClick={() => {
+            if (onReschedule) onReschedule(appointment);
+          }} className="btn-secondary">
+            Reprogramar
+          </button>
         </div>
       )}
 
@@ -87,6 +92,51 @@ export function AppointmentCard({ appointment, onCancel, isAprendiz, onAssignPro
         <div className="card-actions">
           <button onClick={() => onAssignProfessional(appointment)} className="btn-primary">
             Asignar Profesional
+          </button>
+        </div>
+      )}
+
+      {isAprendiz && status === "confirmed" && (
+        <div className="card-actions">
+          <button onClick={() => {
+            if (onReschedule) onReschedule(appointment);
+          }} className="btn-secondary">
+            Reprogramar
+          </button>
+          <button onClick={() => {
+            if (onCancel) onCancel(appointment.id);
+          }} className="btn-danger">
+            Cancelar Cita
+          </button>
+        </div>
+      )}
+
+      {!isAprendiz && status === "pending" && professional && onReschedule && (
+        <div className="card-actions">
+          <button onClick={() => {
+            if (onReschedule) onReschedule(appointment);
+          }} className="btn-secondary">
+            Reprogramar
+          </button>
+        </div>
+      )}
+
+      {!isAprendiz && status === "confirmed" && professional && onReschedule && (
+        <div className="card-actions">
+          <button onClick={() => {
+            if (onReschedule) onReschedule(appointment);
+          }} className="btn-secondary">
+            Reprogramar
+          </button>
+        </div>
+      )}
+
+      {isAprendiz && status !== "cancelled" && status !== "no_show" && status !== "completed" && onEdit && (
+        <div className="card-actions">
+          <button onClick={() => {
+            if (onEdit) onEdit(appointment);
+          }} className="btn-secondary">
+            Editar Datos
           </button>
         </div>
       )}
